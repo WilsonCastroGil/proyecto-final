@@ -49,7 +49,9 @@ $con = New Conexion();
 
 			echo "error, no hay datos";
 
-			
+		 echo "sergioooo";
+
+
 			
 		}
 	}
