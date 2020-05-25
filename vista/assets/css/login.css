@@ -1,0 +1,65 @@
+.bg{
+    background: url('../images/loginback.jpg')no-repeat;
+    width: 100%;   
+    height: 100vh;
+    background-size:100%;
+   
+    
+}
+
+.form-container{
+    position:center;
+    top:10vh;
+   
+   
+    background:#fff;
+    padding: 30px;
+    border-radius:1px;
+    box-shadow: 0px 0px 10px 0px #000;
+    
+}
+
+.naranja{
+    color:#F5860E; 
+    
+    
+}
+
+.verde{
+ 
+    background-color:#05747B; 
+    
+    
+}
+
+.btn-verde{
+    color:#fff;
+    background-color:#05747B;
+    transition: 0.2s
+}
+
+.btn-verde:hover{
+  background-color: #59b548;
+  color: #05747B;
+  border: 2px #05747B solid 
+}
+
+
+.tabla{
+top:20vh;
+position: center;
+padding: 20px;
+border-radius: 2px;
+box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+
+.config{
+
+background: url('../images/fondito.jpg')
+    height: 100%;
+    background-size:100%;
+   
+
+}
