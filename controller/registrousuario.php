@@ -48,6 +48,8 @@ $con = New Conexion();
 		}else{
 
 			echo "error, no hay datos";
+
+			
 			
 		}
 	}
