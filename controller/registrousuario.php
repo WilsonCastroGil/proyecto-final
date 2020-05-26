@@ -1,6 +1,6 @@
 <?php  
 	include('Conexion.php');
-$con = New Conexion();
+	$con = New Conexion();
 	$conectar=$con->conectar();
 
 	// $sql = "SELECT * FROM usuario";
@@ -23,15 +23,15 @@ $con = New Conexion();
 		$estado =1;
 
  		$sql="call sp_GuardarUsuario(
- 		'$idTipoDoc',
- 		'$documento',
- 		'$nombre',
- 		'$apellido', 
- 		'$telefono', 
- 		'$genero',
- 		'$correo',
- 		'$idTipoUsuario',
- 		'$estado')";
+	 		'$idTipoDoc',
+	 		'$documento',
+	 		'$nombre',
+	 		'$apellido', 
+	 		'$telefono', 
+	 		'$genero',
+	 		'$correo',
+	 		'$idTipoUsuario',
+	 		'$estado')";
 
 
 		// $exe = $con->query($sql);
