@@ -62,6 +62,25 @@ $(document).on('keyup','#buscador',function(){
 })
 
 
+// funcion para asignar
+
+function asignarHorario(){
+	var datos = $('#asignarHorario').serialize();
+	var dato = datos+'&asignar=true';
+	// console.log(data);
+	$.ajax({
+		url: '../controller/asignar.php',
+		type: 'post',
+		data : dato
+	})
+	.done(function(resultado){
+		$('#ejecucion').html(resultado);
+	})
+}
+
+
+
+
 
 
 // Función de guardar:
