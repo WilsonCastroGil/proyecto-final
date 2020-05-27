@@ -2,9 +2,12 @@
 
 <?php
 
-include ('menulogin.inc');
+
+
+include ('menu.inc');
 
   ?>
+
 
   <div class="container mt-5">
   	
@@ -15,7 +18,7 @@ include ('menulogin.inc');
 	<div class="col">
 
 		
-<table class="table tabla table-striped">
+<table class="table  table-striped" id="data">
   <thead class="thead-dark">
     <tr>
       <th scope="col">id</th>

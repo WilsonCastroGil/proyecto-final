@@ -11,7 +11,7 @@ $sql="select * from usuario";
 	if (isset($_POST['dato'])) {
 
 
-$sql="select * from usuario where password like '%".$_POST['dato']."%'";
+$sql="select * from usuario where correo like '%".$_POST['dato']."%'";
 
 		$exe = $createcon->query($sql);
 

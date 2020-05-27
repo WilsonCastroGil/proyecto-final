@@ -1,52 +1,47 @@
 <?php  
 	include('menu.inc');
-		include('../controller/Conexion.php');
-            		$con = New Conexion();
-	                $createcon=$con->conectar();
 ?>
 <section class="container">
 	<div class="row">
 
-		
-			<h3 class="text-center col-md-12 mt-2">Asignar Horarios:</h3>
+		<div class="col-md-12 row">
+			<h3 class="text-center col-md-12">Asignar Horarios:</h3>
 			<div class="col">
-
-				<h5 class="text-center text-left">Lunes</h5>
-				<button class="btn btn-success verde row-12" data-toggle="modal" data-target="#exampleModal" data-whatever="1">
-
-					Asignar Instructor
-				</button>
-
+				<h4 class="text-center text-left">Lunes</h4>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="1">Asignar Instructor</button>
 			</div>
 			<div class="col">
-				<h5 class="text-center text-left">Martes</h5>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="2">Asignar Instructor</button>
+				<h4 class="text-center text-left">Martes</h4>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="2">Asignar Instructor</button>
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Miércoles</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="3">Asignar Instructor</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="3">Asignar Instructor</button>
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Jueves</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="4">Asignar Instructor</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="4">Asignar Instructor</button>
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Viernes</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="5">Asignar Instructor</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="5">Asignar Instructor</button>
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Sábado</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="6">Asignar Instructor</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="6">Asignar Instructor</button>
 			</div>
-			
-		
+			<div class="col">
+				<h4 class="text-center text-left">Domingo</h4>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="7">Asignar Instructor</button>
+			</div>
+		</div>
 
 		<!-- Seccion de vista de horario -->
 
-		<div class="col-md-12 row mt-5">
+		<div class="col-md-12 row mt-3">
 			<div class="table-responsive">
 				<table class="table">
-					<thead class="bg-success text-light text-center">
+					<thead class="bg-dark text-light text-center">
 						<tr>
 							<th colspan="7">Horarios Asignados</th>
 						</tr>
@@ -57,7 +52,7 @@
 							<th>Jueves</th>
 							<th>Viernes</th>
 							<th>Sábado</th>
-							
+							<th>Domingo</th>
 						</tr>
 					</thead>
 					<tbody id="tblhorarios">
@@ -71,8 +66,8 @@
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content ">
-      <div class="modal-header config">
+    <div class="modal-content">
+      <div class="modal-header">
         <h5 class="modal-title text-center" id="modal-titulo"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -90,34 +85,31 @@
           </div>
           <div class="form-group col-sm-3">
           	<label for="message-text" class="col-form-label">Trimestre:</label>
-            <select name="trimperiodo" class="form-control">
-            	<option value="" disabled="">Seleccione un Trimestre:</option>
-            	<option value="1">1</option>
-            	<option value="2">2</option>
-            	<option value="3">3</option>
-            	<option value="4">4</option>
-            </select>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+ 
+
           </div>
           <div class="form-group col-md-6">
             <label for="message-text" class="col-form-label">Instructor:</label>
             <select name="idUsuario" class="form-control">
             	<option value="">Seleccione un Instructor:</option>
             	<?php  
-            	
+            		include('../control/conex.php');
             		$sql = "SELECT * from instructores";
-            		$exe = $createcon->query($sql);
-            		if ($exe->num_rows>0) {
-            	while($res = $exe->fetch_row()){
+            		$exe = $con->query($sql);
+            		$con->error;
+            		while($res = $exe->fetch_row()){
             			echo '<option value="'.$res[0].'">'.$res[1].'</option>';
             		}
-
-            	}else{
-            			echo "error en la conexion";
-            		}
-
-            		
-            		// $con->error;
-            		
             	?>
             </select>
           </div>
@@ -126,10 +118,10 @@
             <select name="idAmbiente" class="form-control">
             	<option value="">Seleccione un ambiente</option>
             	<?php  
-            		
+            		include('../control/conex.php');
             		$sql = "SELECT * from ambiente";
-            		$exe = $createcon->query($sql);
-            	
+            		$exe = $con->query($sql);
+            		$con->error;
             		while($res = $exe->fetch_row()){
             			echo '<option value="'.$res[0].'">'.$res[2].'</option>';
             		}
@@ -142,9 +134,9 @@
             <select name="idFicha" class="form-control">
             	<option value="">Seleccione una Ficha</option>
             	<?php  
-            		
+            		include('../control/conex.php');
             		$sql = "SELECT * from ficha;";
-            		$exe = $createcon->query($sql);
+            		$exe = $con->query($sql);
             		$con->error;
             		while($res = $exe->fetch_row()){
             			echo '<option value="'.$res[0].'">'.$res[5].'</option>';
@@ -158,9 +150,9 @@
             <select name="idActiProy" class="form-control">
             	<option value="">Seleccione una Actividad de Aprendizaje</option>
             	<?php  
-            		
+            		include('../control/conex.php');
             		$sql = "SELECT * from actiproy";
-            		$exe = $createcon->query($sql);
+            		$exe = $con->query($sql);
             		$con->error;
             		while($res = $exe->fetch_row()){
             			echo '<option value="'.$res[0].'">'.$res[1].'</option>';
@@ -181,9 +173,9 @@
         	<!-- Resultados de la operación -->
         </section>
       </div>
-      <div class="modal-footer config">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="button" onclick="asignarHorario()" class="btn btn-success verde">Asignar Horario</button>
+        <button type="button" onclick="asignarHorario()" class="btn btn-primary">Asignar Horario</button>
       </div>
     </div>
   </div>

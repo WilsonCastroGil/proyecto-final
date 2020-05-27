@@ -29,7 +29,7 @@ function loginUser(){
 
 // funcion de buscar y mostrar tabla
 
-$(listaruser());
+// $(listaruser());
 
 
 function listaruser(req){
@@ -49,6 +49,7 @@ function listaruser(req){
 	})
 
 }
+
 
 $(document).on('keyup','#buscador',function(){
 	var valorbuscar=$(this).val();
@@ -101,4 +102,8 @@ function cruduser(boton){
 	})
 }
 
-// Buscar Usuario
+// Busc$(document).ready(function() {
+
+  $(document).ready(function() {
+    $('#data').DataTable();
+} );

@@ -2,6 +2,7 @@
 	include('Conexion.php');
 	$con = New Conexion();
 	$conectar=$con->conectar();
+	$conectar->set_charset("utf8");
 
 
 
