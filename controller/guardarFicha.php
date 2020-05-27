@@ -14,7 +14,7 @@
 		$numeroFicha = $_POST['numeroFicha'];
 		
 
-		$sql = "call sp_ficha(null,'$idPrograma','$fechaInicio', '$fechaFin','$cantidadAprendiz','$numeroFicha', '$opcion')";
+		$sql = "call sp_ficha(null,'$idPrograma','$fechaInicio', '$fechaFin','$cantidadAprendiz','$numeroFicha','$opcion')";
 
 		$exe = $createcon->query($sql);
 
