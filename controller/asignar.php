@@ -1,7 +1,7 @@
 <?php  
 	include('Conexion.php');
 	$con = New Conexion();
- $createcon=$con->conectar();
+ 	$createcon=$con->conectar();
 
 	if (isset($_POST['asignar'])) {
 
