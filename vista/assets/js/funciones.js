@@ -25,7 +25,7 @@ function loginUser(){
 			window.location = "../vista/halumno.php";
 		}else {
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
-			$("#resultado").html(res);
+			$("#").html(res);
 		}	
 	});
 }
