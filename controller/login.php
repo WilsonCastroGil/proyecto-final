@@ -4,40 +4,67 @@ if (isset($_POST['btnlogin'])){
 		# Incluyo la conexion a la base de datos:
 	     // print_r($_POST);
 	require('Conexion.php');
+	session_start();
+
 
 	$con = New Conexion();
 	$createcon=$con->conectar();
+	 $createcon->set_charset("utf8");
 
 		# Capturo los datos del formulario:
 	$user = $_POST['usuario'];
 	$pass = $_POST['passuser'];
 
 		# Estructuramos la consulta SQL:
-	$sql = "SELECT * FROM login WHERE correo = '$user' and password = '$pass'";
+	$sql = "call sp_login('".$user."','".$pass."')";
 	$exe = $createcon->query($sql);
 
-		# Ejecutamos la consulta:
-	if ($exe ->num_rows > 0) {
-			# Si el resultado me trae mas de una fila entonces:
-		session_start();
-		while($res = $exe->fetch_row()){
-			$perfil = $res[3];
-			$estado = $res[4];
-		}
-			# Definimos variables de sesión para el control del formulario:
-		$_SESSION['logged'] = 1;
-		$_SESSION['usuario'] = $res[1];
 
-		echo $_SESSION['logged'];
+	$res=$exe->fetch_row();
+		# Ejecutamos la consulta:
+	if ($res[0]!='null' ) {
+			# Si el resultado me trae mas de una fila entonces:
+
+
+	
+	
+	$resultado=explode(';',$res[0]);
+	$_SESSION["user"]=$resultado[0];
+
+	$perfil=$resultado[1];
+
+	switch ($perfil) {
+		case 'Admin':
+
+		$_SESSION["perfil"]='Admin';
+			# code...
+			break;
+
+		case 'Instructor':
+
+		$_SESSION["perfil"]='Instructor';
+			# code...
+			break;
+		
+			case 'Aprendiz':
+
+		$_SESSION["perfil"]='Aprendiz';
+			# code...
+			break;		
+	}
+
+echo  "1";
+// echo $_SESSION["user"]." ".$_SESSION["perfil"]." ha iniciado sesion";
+
+// print_r($_POST);
 
 	}else{
 		echo "Error, el usuario no se encuentra";
+		}
 	}
-}
-else 
-}
 
-}
+
+
 
 ?>
 

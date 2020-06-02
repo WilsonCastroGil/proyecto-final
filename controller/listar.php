@@ -5,10 +5,11 @@ include ('Conexion.php');
 $con=new Conexion();
 
 $createcon=$con->conectar();
+ $createcon->set_charset("utf8");
 
-$sql="select * from usuario";
+// $sql="select * from usuario";
 
-	if (isset($_POST['dato'])) {
+if (isset($_POST['dato'])) {
 
 
 $sql="select * from usuario where correo like '%".$_POST['dato']."%'";

@@ -1,9 +1,9 @@
 <?php 
 # Se va a ir modificando
 include('menu.inc');
-session_start();
-$user = $_SESSION['usuario'];
-$logg = $_SESSION['logged'];
+
+$user = $_SESSION['user'];
+$logg = $_SESSION['perfil'];
 if (isset($logg)) {
 	echo '<h1 class="text-danger">Bienvenido Usuario</h1>';
 }
