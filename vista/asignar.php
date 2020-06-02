@@ -1,4 +1,5 @@
 <?php  
+
 	include('menu.inc');
 		include('../controller/Conexion.php');
             		$con = New Conexion();

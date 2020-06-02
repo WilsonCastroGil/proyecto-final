@@ -2,8 +2,6 @@
 
 <?php
 
-
-
 include ('menu.inc');
   ?>
 

@@ -1,6 +1,7 @@
 <title>Ingreso</title>
 <?php 
 include('menu.inc');
+ 
 
 ?>
 
@@ -17,6 +18,7 @@ include('menu.inc');
 					<label for="exampleInputEmail1">Email address</label>
 					<input type="txt" class="form-control" name="usuario" aria-describedby="emailHelp">
 					<small id="emailHelp" class="form-text text-muted">
+
 						  Olvidaste tu contraseña?
 					</small>
 				</div>

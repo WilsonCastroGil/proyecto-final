@@ -1,10 +1,11 @@
 <?php  
+
 	# Si oprimimos el boton de loginuser, vamos a validar el ingreso:
 if (isset($_POST['btnlogin'])){
 		# Incluyo la conexion a la base de datos:
 	     // print_r($_POST);
 	require('Conexion.php');
-	session_start();
+
 
 
 	$con = New Conexion();
@@ -50,13 +51,16 @@ if (isset($_POST['btnlogin'])){
 
 		$_SESSION["perfil"]='Aprendiz';
 			# code...
-			break;		
+			break;	
+
 	}
 
+	
+// print_r($_SESSION);
 echo  "1";
 // echo $_SESSION["user"]." ".$_SESSION["perfil"]." ha iniciado sesion";
 
-// print_r($_POST);
+
 
 	}else{
 		echo "Error, el usuario no se encuentra";

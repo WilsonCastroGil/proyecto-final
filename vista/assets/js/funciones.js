@@ -5,7 +5,7 @@ function loginUser(){
 	// adicionamos el boton concatenando el resultado de serialize con el botón, "&btnlogin=true"
 	var datalogin = dataForm+'&btnlogin=true';
 	 // Comprobar: 	
-	 alert (datalogin);
+	 // alert (datalogin);
 	//Con ajax controlamos el paso de datos al servicio desde el controlador:
 	$.ajax({
 		type: "POST",
@@ -22,7 +22,7 @@ function loginUser(){
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
 			
 			// Método para cambiar de vista en la url:
-			window.location = "../vista/main.php";
+			window.location = "../vista/halumno.php";
 		}else {
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
 			$("#resultado").html(res);

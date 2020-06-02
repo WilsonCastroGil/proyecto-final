@@ -1,6 +1,6 @@
 <?php 
 require_once('../controller/Conexion.php');
-include('menulogin.inc')
+include('menu.inc');
 
 ?>
 
