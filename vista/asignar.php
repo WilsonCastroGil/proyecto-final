@@ -7,6 +7,13 @@
 	                 $createcon->set_charset("utf8");
 	               
 ?>
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+    $('#tlunes').DataTable();
+} );
+</script>
+
 <section class="container">
 	<div class="row">
 
@@ -22,8 +29,8 @@
 			<div class="col">
 
 				<h5 class="text-center text-left">Lunes</h5>
-				<button class="btn btn-success verde " data-toggle="modal" data-target="#exampleModal" data-whatever="1">
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<button class="btn btn-success  " data-toggle="modal" data-target="#exampleModal" data-whatever="1">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -34,8 +41,8 @@
 			</div>
 			<div class="col">
 				<h5 class="text-center text-left">Martes</h5>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="2">
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="2">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -45,9 +52,9 @@
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Miércoles</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="3">
+				<button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="3">
 
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -57,8 +64,8 @@
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Jueves</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="4">
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="4">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -69,9 +76,9 @@
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Viernes</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="5">
+				<button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="5">
 
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -80,8 +87,8 @@
 			</div>
 			<div class="col">
 				<h4 class="text-center text-left">Sábado</h4>
-				<button class="btn btn-success verde" data-toggle="modal" data-target="#exampleModal" data-whatever="6">
-<svg class="bi bi-person-plus-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="6">
+<svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
   <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
 </svg>
@@ -95,46 +102,246 @@
 
 		<!-- Seccion de vista de horario -->
 
-		<div class="col-md-12 row mt-5">
+		<div class="col-md-12  mt-5">
 			<div class="table-responsive ">
 			
-		<table class="table-striped " width="100%" height="100%">
-			<tr><th rowspan= 4
-			> lunes</th><td>Numero de ficha</td><td>Ambiente</td><td>Dia</td><td>Nombre Comp</td><td>Instructor</td><td>Trimestre</td><td>Hora inicio</td><td>Hora fin</td> </tr>
+		
 
-			<?php 
+<ul class="nav nav-tabs bg-dark" id="myTab" role="tablist">
+  <li class="nav-item ">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Miercoles" role="tab" aria-controls="contact" aria-selected="false">MIERCOLES</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="home-tab" data-toggle="tab" href="#Jueves" role="tab" aria-controls="home" aria-selected="true">JUEVES</a>
+  </li> 
+  <li class="nav-item">
+    <a class="nav-link " id="home-tab" data-toggle="tab" href="#Viernes" role="tab" aria-controls="home" aria-selected="true">VIERNES</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link " id="home-tab" data-toggle="tab" href="#Sabado" role="tab" aria-controls="home" aria-selected="true">SABADO</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="Lunes" role="tabpanel" aria-labelledby="home-tab">
+
+    <table id="tlunes" class="table-striped " width="100%" height="200px">
+     <thead class="thead-dark">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
 
 $sql="select * from v_asignacion where dia ='lunes'";
 
-		$exe = $createcon->query($sql);
+    $exe = $createcon->query($sql);
 
-		if ($exe->num_rows > 0) {
+    if ($exe->num_rows > 0) {
 
-		$cont=0;
+    $cont=0;
 
-			while ($res=$exe->fetch_row()) {
-				echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
-					$count=$cont+1;
-				
-			}
+          $count=$cont+1;
+        
+      }
 
-				$SESSION['cont']=$count;
+      
+    }
+      else{
 
-echo $SESSION['cont']; 
-		
-		}
-			else{
+        echo "no se encontraron datos";
 
-				echo "no se encontraron datos";
+      }
+  
 
-			}
-	
+ ?>
+
+</table>
+</div>
+  <div class="tab-pane fade" id="Martes" role="tabpanel" aria-labelledby="contact-tab"> 
+<table class="table-striped " width="100%" height="200px">
+     <thead class="bg-success verde">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
+
+$sql="select * from v_asignacion where dia ='martes'";
+
+    $exe = $createcon->query($sql);
+
+    if ($exe->num_rows > 0) {
+
+    $cont=0;
+
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+
+          $count=$cont+1;
+        
+      }
+
+      
+    }
+      else{
+
+        echo "no se encontraron datos";
+
+      }
+  
 
  ?>
 
 </table>
 
+  </div>
+   <div class="tab-pane fade" id="Miercoles" role="tabpanel" aria-labelledby="contact-tab">
+     <table class="table-striped " width="100%" height="200px">
+       <thead class="bg-success verde">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
+
+$sql="select * from v_asignacion where dia ='miercoles'";
+
+    $exe = $createcon->query($sql);
+
+    if ($exe->num_rows > 0) {
+
+    $cont=0;
+
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+
+          $count=$cont+1;
+        
+      }
+
+      
+    }
+      else{
+
+        echo "no se encontraron datos";
+
+      }
+  
+
+ ?>
+
+</table>
+   </div>
+    <div class="tab-pane fade" id="Jueves" role="tabpanel" aria-labelledby="contact-tab">
+      <table class="table-striped " width="100%" height="200px">
+       <thead class="bg-success verde">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
+
+$sql="select * from v_asignacion where dia ='jueves'";
+
+    $exe = $createcon->query($sql);
+
+    if ($exe->num_rows > 0) {
+
+    $cont=0;
+
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+
+          $count=$cont+1;
+        
+      }
+
+      
+    }
+      else{
+
+        echo "no se encontraron datos";
+
+      }
+  
+
+ ?>
+
+</table>
+    </div>
+     <div class="tab-pane fade" id="Viernes" role="tabpanel" aria-labelledby="contact-tab">
+       
+       <table class="table-striped " width="100%" height="200px">
+        <thead class="bg-success verde">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
+
+$sql="select * from v_asignacion where dia ='viernes'";
+
+    $exe = $createcon->query($sql);
+
+    if ($exe->num_rows > 0) {
+
+    $cont=0;
+
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+
+          $count=$cont+1;
+        
+      }
+
+      
+    }
+      else{
+
+        echo "no se encontraron datos";
+
+      }
+  
+
+ ?>
+
+</table>
+     </div>
+      <div class="tab-pane fade" id="Sabado" role="tabpanel" aria-labelledby="contact-tab">
+        <table class="table-striped " width="100%" height="200px">
+      <thead class="bg-success verde">
+      <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+
+      <?php 
+
+$sql="select * from v_asignacion where dia ='sabado'";
+
+    $exe = $createcon->query($sql);
+
+    if ($exe->num_rows > 0) {
+
+    $cont=0;
+
+      while ($res=$exe->fetch_row()) {
+        echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+
+          $count=$cont+1;
+        
+      }
+
+      
+    }
+      else{
+
+        echo "no se encontraron datos";
+
+      }
+  
+
+ ?>
+
+</table>
+      </div>
+</div>
 
 
 

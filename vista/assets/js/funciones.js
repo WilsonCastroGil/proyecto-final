@@ -22,7 +22,7 @@ function loginUser(){
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
 			
 			// Método para cambiar de vista en la url:
-			window.location = "../vista/halumno.php";
+			window.location = "../vista/configuracion.php";
 		}else {
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
 			$("#").html(res);

@@ -1,9 +1,11 @@
 <title>Ingreso</title>
 <?php 
 include('menu.inc');
- 
+
 
 ?>
+
+
 
 <section class="container">
 	<div class="row">
