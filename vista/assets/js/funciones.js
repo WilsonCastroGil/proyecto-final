@@ -4,7 +4,8 @@ function loginUser(){
 	var dataForm = $('#formLogin').serialize();
 	// adicionamos el boton concatenando el resultado de serialize con el botón, "&btnlogin=true"
 	var datalogin = dataForm+'&btnlogin=true';
-	// Comprobar: 	alert (datalogin);
+	 // Comprobar: 	
+	 // alert (datalogin);
 	//Con ajax controlamos el paso de datos al servicio desde el controlador:
 	$.ajax({
 		type: "POST",
@@ -13,14 +14,18 @@ function loginUser(){
 	}).done(function(res){
 		// Parseo el resultado para volverlo entero:
 		this.res = parseInt(res);
+
+		console.log(res);
 		if (this.res === 1 ) {
+
+
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			console.log(res);
+			
 			// Método para cambiar de vista en la url:
-			window.location = "../vista/main.php";
+			window.location = "../vista/halumno.php";
 		}else {
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
-			$("#resultado").html(res);
+			$("#").html(res);
 		}	
 	});
 }
@@ -29,7 +34,8 @@ function loginUser(){
 
 // funcion de buscar y mostrar tabla
 
-// $(listaruser());
+
+$(listaruser());
 
 
 function listaruser(req){
@@ -102,8 +108,7 @@ function cruduser(boton){
 	})
 }
 
-// Busc$(document).ready(function() {
-
-  $(document).ready(function() {
-    $('#data').DataTable();
-} );
+// // Busc$(document).ready(function() {
+// $(document).ready( function () {
+//     $('#data').DataTable();
+// } );

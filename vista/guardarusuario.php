@@ -1,12 +1,14 @@
 <?php
-//session_start();
-//if ($_SESSION["logueado"]==null) {
-//    
-//   header("location:login.php"); 
-//    
-//}else{
-//    $mensaje = "<span style='color:red'>Error los datos no son correctos<span>";
-//}
+
+include ('menu.inc');
+session_start();
+if ($_SESSION["logueado"]==null) {
+   
+  header("location:login.php"); 
+   
+}else{
+   $mensaje = "<span style='color:red'>Error los datos no son correctos<span>";
+}
 ?>
 
 <!DOCTYPE html>

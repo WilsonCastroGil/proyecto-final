@@ -1,6 +1,6 @@
 <?php 
 require_once('../controller/Conexion.php');
-include('menulogin.inc')
+include('menu.inc');
 
 ?>
 
@@ -30,6 +30,7 @@ include('menulogin.inc')
 							$createcon = $con->conectar(); 
 							$sql = "SELECT * FROM dia";
 							$exe = $createcon->query($sql);
+							 $createcon->set_charset("utf8");
 							if ($exe->num_rows > 0) {
 								# Traemos todo:
 								while($res = $exe->fetch_row()){

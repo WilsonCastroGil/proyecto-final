@@ -2,11 +2,11 @@
 
 <?php
 
-
-
 include ('menu.inc');
-
   ?>
+
+
+
 
 
   <div class="container mt-5">
@@ -18,7 +18,7 @@ include ('menu.inc');
 	<div class="col">
 
 		
-<table class="table  table-striped" id="data">
+<table class="table  table-striped border-dark" id="data">
   <thead class="thead-dark">
     <tr>
       <th scope="col">id</th>
