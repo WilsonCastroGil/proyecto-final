@@ -5,7 +5,6 @@
 
 	if (isset($_POST['asignar'])) {
 
-		$opcion = 'guardar';
 		# code...
 		$idFicha = $_POST['idFicha'];
 		$idAmbiente = $_POST['idAmbiente'];
@@ -17,7 +16,7 @@
 		$horaInicio = $_POST['horaInicio'];
 		$horaFin = $_POST['horaFin'];
 
-		$sql = "CALL sp_detalleasignacion(null,'$idFicha','$idAmbiente','$idDia','$idUsuario','$idActiProy','$periodo','$trimPeriodo','$horaInicio','$horaFin','$opcion')";
+		$sql = "CALL guardarAsignacion(null,'$idFicha','$idAmbiente','$idDia','$idUsuario','$idActiProy','$periodo','$trimPeriodo','$horaInicio','$horaFin')";
 
 		$exe = $createcon->query($sql);
 	
