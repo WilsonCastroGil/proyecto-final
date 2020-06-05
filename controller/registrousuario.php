@@ -21,7 +21,7 @@
 		$genero =$_POST['genero'];
 		$correo =$_POST['correo']; 
 		$idTipoUsuario =$_POST['idTipoUsuario']; 
-		$estado =1;
+		
 
  		$sql="call sp_GuardarUsuario(
 	 		'$idTipoDoc',
@@ -31,8 +31,7 @@
 	 		'$telefono', 
 	 		'$genero',
 	 		'$correo',
-	 		'$idTipoUsuario',
-	 		'$estado')";
+	 		'$idTipoUsuario')";
 
 
 		// $exe = $con->query($sql);
