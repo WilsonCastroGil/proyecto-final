@@ -17,15 +17,14 @@ function loginUser(){
 
 		console.log(res);
 		if (this.res === 1 ) {
-
-
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			
+			alert("hasta aca vamos ok");
+			// console.log();
 			// Método para cambiar de vista en la url:
 			window.location = "../vista/configuracion.php";
 		}else {
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
-			$("#").html(res);
+			$("#resultado").html(res);
 		}	
 	});
 }
@@ -92,10 +91,11 @@ function asignarHorario(){
 
 // Función de guardar:
 
-function cruduser(boton){
-	var datoForm = $("#formRegistro").serialize();
-	var datoReg = datoForm+'&btnopcion='+boton;
-	// alert (datoReg);
+function cruduser(btnSaveUser){
+	var datoForm = $("#formRegistroUser").serialize();
+	var datoReg = datoForm+'&btnopcion='+btnSaveUser;
+	alert (datoReg);
+	console.log();
 	// Control asicronico:
 	$.ajax({
 		type: "POST",
@@ -104,7 +104,7 @@ function cruduser(boton){
 	})
 	.done(function(res){
 		console.log(res);
-		alert(res);
+		$("#alerta").html(res);
 	})
 }
 

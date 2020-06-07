@@ -2,6 +2,14 @@
 require_once('../controller/Conexion.php');
 include('menu.inc');
 
+
+   	print_r($_SESSION);
+// if ($_SESSION["user"]="null"){
+
+// 	header('location:login.php');
+
+// }
+
 ?>
 
 <div class="container">

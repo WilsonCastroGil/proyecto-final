@@ -20,56 +20,65 @@ if (isset($_POST['btnlogin'])){
 	$sql = "call sp_login('".$user."','".$pass."')";
 	$exe = $createcon->query($sql);
 
-
+	# Ejecutamos la consulta:
 	$res=$exe->fetch_row();
-		# Ejecutamos la consulta:
-	if ($res[0]!='null' ) {
-			# Si el resultado me trae mas de una fila entonces:
+
+	
+      if($exe->num_rows>0 and $res[0]!='error'){
+	
+			# Si el resultado me trae mas de una fila y no me devuelve el mesaje 'error' entonces:
 
 
 	
+			#ponemos explode para separar los elementos traidos en el array por el simbolo ';'
 	
 	$resultado=explode(';',$res[0]);
 	$_SESSION["user"]=$resultado[0];
 
-	$perfil=$resultado[1];
+	#el item del array en posicion 0 es el usuario
 
-	switch ($perfil) {
-		case 'Admin':
+	$admin=$resultado[1];
+	$instructor=$resultado[2];
+	$aprendiz=$resultado[3];
 
-		$_SESSION["perfil"]='Admin';
-			# code...
-			break;
 
-		case 'Instructor':
+	if($admin || $instructor || $aprendiz){
 
-		$_SESSION["perfil"]='Instructor';
-			# code...
-			break;
-		
-			case 'Aprendiz':
+		if($admin == 1 ){
+			$perfil="Admin";
+			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
 
-		$_SESSION["perfil"]='Aprendiz';
-			# code...
-			break;	
+		}
 
+		if($instructor == 1){
+			$perfil= "Instructor";
+			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
+		}
+
+		if($aprendiz == 1) {
+			$perfil= "Aprendiz";
+			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
+		}
 	}
 
-	// print_r($_POST);
+
+	
+
+	
+
+// 	print_r($_POST);
 // print_r($_SESSION);
 
 echo "1";
-// echo $_SESSION["user"]." ".$_SESSION["perfil"]." ha iniciado sesion";
+// // echo $_SESSION["user"]." ".$_SESSION["perfil"]." ha iniciado sesion";
 
 
 
-	}else{
+	}
+	else{
 		echo "Error, el usuario no se encuentra";
 		}
 	}
 
 
-
-
 ?>
-

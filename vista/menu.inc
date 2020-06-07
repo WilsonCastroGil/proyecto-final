@@ -1,11 +1,18 @@
 <?php 	 
 	include('cabeza.inc');
   
-print_r($_SESSION);
+// print_r($_SESSION);
   $usuario=$_SESSION["user"];
- 
+  $prof=$_SESSION["perfil"];
+
+  if(empty($_SESSION["user"])){
+
+    header('location:login.php'); 
+  }
+
+
   # validaciones de sesión:
-  if ($_SESSION["perfil"] = 'Admin'){
+  if ( $prof= 'Admin'){
     
     $menu = '
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +30,7 @@ print_r($_SESSION);
           <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                '.$usuario.'
+                '.$usuario.'  
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Perfil</a>

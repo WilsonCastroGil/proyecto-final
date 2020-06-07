@@ -5,9 +5,10 @@
 		include('../controller/Conexion.php');
             		$con = New Conexion();
 	                $createcon=$con->conectar();
-	                $createcon->set_charset("utf8");
+					$createcon->set_charset("utf8");
+				
 ?>
-<section class="container">
+<section class="container-fluid">
 	<div class="row text-center mt-5 ">
 
 <div class="col">
@@ -88,6 +89,7 @@ Administre usuario
     <div class="modal-content">
       <div class="modal-header config">
         <h5 class="modal-title" id="exampleModalLabel">Registrar usuario</h5>
+		
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -95,12 +97,14 @@ Administre usuario
       <div class="modal-body">
 
 <div class="container">
+<form id="formRegistroUser" method="POST">
+    <div class="row">
+
+		
 	
-<div class="row">
-	
- <div class="form-group col-sm-6">
+ 		<div class="form-group col-sm-6">
           	<label for="ambiente" class="col-form-label">Tipo de documento:</label>
-            <select name="idActiProy" class="form-control border-success">
+            <select  class="form-control border-success" name="idTipoDoc">
             	<option value="" disabled="" >Seleccione un tipo de documento</option>
             	<?php  
             		
@@ -117,12 +121,12 @@ Administre usuario
 
           <div class="form-group col-sm-6">
           	<label for="inputEmail4">Documento</label>
-								<input type="text" class="form-control border-success" name="nombre">
+								<input type="text" class="form-control border-success" name="documento">
 
           </div>
 
 
-</div>
+	</div>
 
 <div class="row">
 	
@@ -134,7 +138,7 @@ Administre usuario
 
 				<div class="form-group col-sm-6">
 					 <label for="inputEmail4">Apellidos</label>
-								<input type="text" class="form-control border-success" name="nombre">
+								<input type="text" class="form-control border-success" name="apellido">
 
 				</div>
 
@@ -144,14 +148,14 @@ Administre usuario
 <div class="row">
 			<div class="form-group col-sm-6">
 					 <label for="inputEmail4">Telefono</label>
-								<input type="text" class="form-control border-success" name="nombre">
+								<input type="text" class="form-control border-success" name="telefono">
 
 				</div>
 
 				<div class="form-group col-sm-6">
 
 					<label for="inputEmail4">Genero</label>
-					<select name="estadouser" class="form-control border-success" >
+					<select  class="form-control border-success" name="genero" >
 						
 						<option disabled="">Seleccione genero</option>
 					<option value="m">masculino</option>
@@ -167,10 +171,18 @@ Administre usuario
 
 
 <div class="row">
-	
-	 <div class="form-group col-sm-6">
+
+		<div class="form-group col-sm-6">
+					 <label for="inputEmail4">Correo</label>
+								<input type="text" class="form-control border-success" name="correo">
+
+				</div>
+
+
+
+				<div class="form-group col-sm-6">
           	<label for="ambiente" class="col-form-label">Rol:</label>
-            <select name="idFicha" class="form-control border-success">
+            <select  class="form-control border-success" name="idTipoUsuario">
             	<option value="" disabled="">Seleccione un tipo de usuario</option>
             	<?php  
             		
@@ -184,9 +196,17 @@ Administre usuario
             </select>
           </div>
 
+</div>
+
+
+
+<div class="row">
+	
+	
+
           <div class="form-group col-sm-6">
 
-          		<!-- <label for="ambiente" class="col-form-label">Estado:</label>
+          		<label for="ambiente" class="col-form-label">Estado:</label>
 					<select name="estadouser" class="form-control border-success" >
 						
 						<option disabled="">Seleccione un estado del usuario</option>
@@ -194,7 +214,7 @@ Administre usuario
 					<option value="2">inhabilitado</option>
 
 
-					</select> -->
+					</select>
 
 				</div>
 
@@ -203,14 +223,17 @@ Administre usuario
 </div>
 
 
-</div>
+	</div>
   
-      </div>
-      <div class="modal-footer config">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" onclick="cruduser('guardar')" class="btn btn-success verde">Registrar Usuario</button>
-      </div>
-    </div>
+  		 	 </div>
+     				 <div class="modal-footer config">
+       						 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       						 <button  type="button"  onclick="cruduser('guardar')" class="btn btn-success verde">Registrar Usuario</button>
+								
+      				</div>
+					  
+					  </form>
+   			 </div>
   </div>
 </div>
 </div>
