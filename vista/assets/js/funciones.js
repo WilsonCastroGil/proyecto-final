@@ -18,7 +18,7 @@ function loginUser(){
 		console.log(res);
 		if (this.res === 1 ) {
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			alert("hasta aca vamos ok");
+			// alert("hasta aca vamos ok");
 			// console.log();
 			// Método para cambiar de vista en la url:
 			window.location = "../vista/configuracion.php";
