@@ -7,10 +7,12 @@
 	                 $createcon->set_charset("utf8");
 	               
 ?>
+
+
 <script type="text/javascript">
   
   $(document).ready(function() {
-    $('#tlunes').DataTable();
+    $('#tsemana.display').DataTable();
 } );
 </script>
 
@@ -130,7 +132,7 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="Lunes" role="tabpanel" aria-labelledby="home-tab">
 
-    <table id="tlunes" class="table-striped " width="100%" height="200px">
+    <table  id ="tsemana" class="table-striped display" width="100%" height="200px">
      <thead class="thead-dark">
       <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
@@ -165,7 +167,7 @@ $sql="select * from v_asignacion where dia ='lunes'";
 </table>
 </div>
   <div class="tab-pane fade" id="Martes" role="tabpanel" aria-labelledby="contact-tab"> 
-<table class="table-striped " width="100%" height="200px">
+<table  id="tsemana" class="table-striped display "  width="100%" height="200px">
      <thead class="bg-success verde">
       <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
@@ -201,7 +203,7 @@ $sql="select * from v_asignacion where dia ='martes'";
 
   </div>
    <div class="tab-pane fade" id="Miercoles" role="tabpanel" aria-labelledby="contact-tab">
-     <table class="table-striped " width="100%" height="200px">
+     <table id="tsemana" class="table-striped display" width="100%" height="200px">
        <thead class="bg-success verde">
       <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
@@ -272,7 +274,7 @@ $sql="select * from v_asignacion where dia ='jueves'";
     </div>
      <div class="tab-pane fade" id="Viernes" role="tabpanel" aria-labelledby="contact-tab">
        
-       <table class="table-striped " width="100%" height="200px">
+       <table class="table-striped table " width="100%" height="200px">
         <thead class="bg-success verde">
       <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
