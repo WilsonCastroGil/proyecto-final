@@ -138,7 +138,7 @@
 
       <?php 
 
-$sql="select * from v_asignacion where dia ='lunes'";
+$sql="select * from v_detalleasignacion where dia ='lunes'";
 
     $exe = $createcon->query($sql);
 
@@ -173,7 +173,7 @@ $sql="select * from v_asignacion where dia ='lunes'";
 
       <?php 
 
-$sql="select * from v_asignacion where dia ='martes'";
+$sql="select * from v_detalleasignacion where dia ='martes'";
 
     $exe = $createcon->query($sql);
 

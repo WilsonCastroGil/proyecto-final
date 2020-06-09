@@ -1,10 +1,10 @@
 <?php
 
 include ('menu.inc');
-session_start();
-if ($_SESSION["logueado"]==null) {
+
+if ($_SESSION["user"]==null) {
    
-  header("location:login.php"); 
+  header("location:cerrarsesion.php"); 
    
 }else{
    $mensaje = "<span style='color:red'>Error los datos no son correctos<span>";
@@ -13,36 +13,11 @@ if ($_SESSION["logueado"]==null) {
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
-              minimum-scale=1.0">
-
-        <title>Guardar Usuario | Checknassist</title>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <link href="css/registro.css" rel="stylesheet" type="text/css"/>
-
-    </head>
+   
 
     <body>
 
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Menu</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-
-            </nav>
-        </div>
+       
 
         <section class="container-fluid bg">
 <!--            <span style="color: #000"> 
