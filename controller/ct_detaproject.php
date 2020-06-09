@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 include('Conexion.php');
 $con = New Conexion();
 $createcon=$con->conectar();
@@ -10,16 +10,12 @@ $createcon=$con->conectar();
 		$idResultA = $_POST['idResultA'];
 		$estado=1;
 
-		$sql= "INSERT INTO detaproject values(null,'$idActiProy','$idResultA','$estado')";
+		$sql= "insert into detaproject values(null,'$idActiProy','$idResultA','$estado')";
 
 		$exe = $createcon->query($sql);
 	
-		if ($exe ->num_rows > 0) {
-			if ($res = $exe->fetch_row()) {
-				echo $res[0];
-			}else{
-				echo $con->error;
-			}
+		if ($exe) {
+			echo "Se guardo";
 			
 		}else{
 			echo "No se puede guardar el resultado de Competencia";
@@ -28,4 +24,4 @@ $createcon=$con->conectar();
 	}
 
 
- ?>
+?>
