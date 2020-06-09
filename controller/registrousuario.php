@@ -9,7 +9,7 @@
 
  function guardarUsuario(){
  		# code...
- 		if (isset($_POST['resgistroUsuarios'])) {
+ 		#if (isset($_POST['resgistroUsuarios'])) {
 
 		# code...
 		$idTipoDoc =$_POST['idTipoDoc'];
