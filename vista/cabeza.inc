@@ -26,7 +26,21 @@ font-awesome/4.7.0/css/font-awesome.min.css">
 <body class="bg">
 
 
+<section class="footer row card-footer text-light">
+	<div class="col">
+	   <div class=" text-ligt naranja ">
+    						SENA CTMA 2020 TODOS LOS DERECHOS RESERVADOS.
+  					</div>
+	</div>
 
+		<div class="col">
+					
+		</div>
+
+		<div class="col text-right ">
+			<img  src="assets\images\logosena.svg" alt="logo sena" width="30px" height="30px">
+		</div>
+</section>
 
 
 <script src="assets/js/jquery.js"></script>

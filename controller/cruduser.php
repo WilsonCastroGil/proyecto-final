@@ -21,6 +21,8 @@
 		$idTipoUsuario =$_POST['idTipoUsuario']; 
 		$estado =1;
 
+
+		
  		$sql="call sp_GuardarUsuario(
 	 		'$idTipoDoc',
 	 		'$documento',
@@ -36,14 +38,12 @@
 
 	$exe = $createcon->query($sql);
 
-	
-		// $exe = $con->query($sql);
 
-		// print_r($_POST);
 		if ($exe->num_rows > 0) {
 			if ($res = $exe->fetch_row()) {
 
 				echo $res[0];
+
 			}else{
 				echo $con->error;
 			}
@@ -51,16 +51,67 @@
 		}
 		else{
 
-			echo "error, no se ha registrado";
+			echo "error, no se ha registrado ni actualizado";
 
 		}
 
 
 			
-		}else{
-			#si no, llamamos el procedimiento de la tabla
-			
 		}
-	}
+			
+		// 	if ($_POST['btnopcion'] == 'actualizar') {
+			
+		// 		# Si es guardar entonces llamamos el sp multi proposito
 	
-?>
+				
+		// 		$con = New Conexion();
+		// 		$createcon=$con->conectar();
+		// 		 $createcon->set_charset("utf8");
+	
+		// 	$v_idTipoDoc =$_POST['idTipoDoc'];
+		// 	$v_documento  =$_POST['documento'];
+		// 	$v_telefono  =$_POST['telefono'];
+		// 	$v_correo =$_POST['correo']; 
+		// 	$idTipoUsuario =$_POST['idTipoUsuario']; 
+		// 	$estado =1;
+	
+			
+			
+		// 	 $sql="call sp_ActualizarUsuario(
+		// 		 '$v_documento',
+		// 		 '$v_idTipoDoc',
+		// 		 '$v_correo',
+		// 		 '$v_password', 
+		// 		 '$v_telefono', 
+		// 		 '$idTipoUsuario',
+		// 		 '$estado')";
+	
+	
+	
+		// $exe = $createcon->query($sql);
+	
+	
+		// 	if ($exe->num_rows > 0) {
+		// 		if ($res = $exe->fetch_row()) {
+	
+		// 			echo $res[0];
+	
+		// 		}else{
+		// 			echo $con->error;
+		// 		}
+				
+		// 	}
+		// 	else{
+	
+		// 		echo "error, no se ha registrado ni actualizado";
+	
+		// 	}
+	
+	
+				
+		// 	}
+			
+		
+	}else{
+		echo "error";
+	}

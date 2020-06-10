@@ -1,49 +1,42 @@
 <title>Ingreso</title>
 <?php 
 include('cabezalogin.inc');
-
-
 ?>
 
 
 
 <section class="container-fluid">
 
-<div class="row-12"> 
-<nav class="navbar navbar-expand-lg navbar-dark text-light bg-dark mb-5">
-  		<a class="navbar-brand" href="#">Navbar</a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
- 			 </button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Imprimir</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav my-2 my-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                '.$usuario.'  
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Perfil</a>
-                <a class="dropdown-item" href="configuracion.php">Configuración</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="cerrarsesion.php">Cerrar Sesión</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-	</nav>
+
+<div class="row-12"> 
+	
+		<div class="pos-f-t">
+  			<div class="collapse" id="navbarToggleExternalContent">
+    			<div class="bg-dark p-4">
+      				<h4 class="naranja">Chekinassist</h4>
+      <span class="text-light">Debes iniciar sesion  para continuar,<br>
+	   en chekinassist puedes visualizar <br>
+	  tu horario en caso de ser un aprendiz o un instructor, <br>
+	  si tienes varios perfiles podras cambiarlos en la pestaña <br>
+	  configuracion</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+	<div class="text-center naranja" >
+
+Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.
 	</div>
+
+  </nav>
+
+</div>
+
+
 	<div class="row">
 
 
@@ -77,3 +70,20 @@ include('cabezalogin.inc');
 		<div class="col-sm-4"></div>
 	</div>
 </section>
+
+<section class="footer row card-footer text-light">
+	<div class="col">
+	   <div class=" text-ligt naranja ">
+    						SENA CTMA 2020 TODOS LOS DERECHOS RESERVADOS.
+  					</div>
+	</div>
+
+		<div class="col">
+					
+		</div>
+
+		<div class="col text-right ">
+			<img  src="assets\images\logosena.svg" alt="logo sena" width="30px" height="30px">
+		</div>
+</section>
+ 

@@ -14,7 +14,7 @@
    
     background:#fff;
     padding: 30px;
-    border-radius:1px;
+    border-radius:10px;
     box-shadow: 0px 0px 10px 0px #000;
     
 }
@@ -27,7 +27,7 @@
 
 .verde{
  
-    background-color:#05747B; 
+    color:#05747B; 
     
     
 }
@@ -63,3 +63,14 @@ background: url('../images/fondillo.jpg');
    
 
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #05747B;
+    color: white;
+    text-align: center;
+  }

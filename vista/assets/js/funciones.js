@@ -104,11 +104,24 @@ function cruduser(btnSaveUser){
 	})
 	.done(function(res){
 		console.log(res);
+		
 		$("#alerta").html(res);
 	})
 }
 
-// // Busc$(document).ready(function() {
-// $(document).ready( function () {
-//     $('#data').DataTable();
-// } );
+function crudficha(btn){
+	var datoForm = $("#formficha").serialize();
+	var datoReg = datoForm+'&btnopcion='+btn;
+	alert (datoReg);
+	console.log();
+	// Control asicronico:
+	$.ajax({
+		type: "POST",
+		url: "../controller/guardarFicha.php",
+		data: datoReg
+	})
+	.done(function(res){
+		console.log(res);
+		$("#alertaficha").html(res);
+	})
+}

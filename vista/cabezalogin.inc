@@ -19,8 +19,6 @@ font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-
-
 <script src="assets/js/jquery.js"></script>
 
 
