@@ -7,10 +7,9 @@
 	// $exe = $conectar->query($sql);
 
 
- function guardarUsuario()
- 	{
+ function guardarUsuario(){
  		# code...
- 		if (isset($_POST['resgistroUsuarios'])) {
+ 		#if (isset($_POST['resgistroUsuarios'])) {
 
 		# code...
 		$idTipoDoc =$_POST['idTipoDoc'];
@@ -20,7 +19,9 @@
 		$telefono  =$_POST['telefono'];
 		$genero =$_POST['genero'];
 		$correo =$_POST['correo']; 
-		$idTipoUsuario =$_POST['idTipoUsuario']; 
+		$idTipoUsuario =$_POST['idTipoUsuario'];
+		$estado =1;
+
 		
 
  		$sql="call sp_GuardarUsuario(
@@ -31,7 +32,8 @@
 	 		'$telefono', 
 	 		'$genero',
 	 		'$correo',
-	 		'$idTipoUsuario')";
+	 		'$idTipoUsuario',
+	 		'$estado')";
 
 
 		// $exe = $con->query($sql);
@@ -50,7 +52,7 @@
 			echo "error, no hay datos";
 
 		}
-	}
+	#}
 }	
 
 function actualizarUsuario(){
