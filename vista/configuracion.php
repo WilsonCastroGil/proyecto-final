@@ -6,11 +6,21 @@ $con = new Conexion();
 $createcon = $con->conectar();
 $createcon->set_charset("utf8");
 
-// if ($_SESSION["user"]="null"){
+if ($_SESSION["perfil"]!='1;0;0' ) {
 
-// 	header('location:login.php');
+# Aseguramos desactivar todas las sesiones:
+session_unset();
+# Destruimos todos los archivos y variables de la sesion:
+session_destroy();
+# Destruimos los cookies del navegador para que al dar atrás no 
+$parametros_cookies = session_get_cookie_params(); 
+setcookie(session_name(),0,1,$parametros_cookies["path"]);
+# Actualizamos la pagina donde nos escontrabamos y redirigimos a la pagina princial
+echo "<meta http-equiv='refresh' content='0;'/>";
+header('location:login.php');
+exit;
+}
 
-// }
 
 ?>
 
@@ -146,13 +156,14 @@ $createcon->set_charset("utf8");
 
 
 									</div>
-								</form>
+								
 							</div>
 
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 								<button type="button" class="btn btn-primary">Save changes</button>
 							</div>
+							</form>
 						</div>
 					</div>
 				</div>
