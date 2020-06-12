@@ -15,7 +15,7 @@
     background:#fff;
     padding: 30px;
     border-radius:10px;
-    box-shadow: 0px 0px 10px 0px #000;
+    box-shadow: 0px 0px 10px 0px rgb(37, 116, 30);
     
 }
 
@@ -45,12 +45,12 @@
 }
 
 
-.tabla{
+.bordes{
 
 position: center;
 
 border-radius: 20px;
-box-shadow: 0px 0px 10px 0px #000;
+box-shadow: 0px 0px 10px 0px rgb(37, 116, 30);
 
 }
 
@@ -75,9 +75,23 @@ background: url('../images/fondillo.jpg');
     text-align: center;
   }
 
-  .bgverde{
+    .bgverde {
  
     background-color:#238276; 
     
     
+}
+
+    .bgverdea {
+ 
+    background-color:#59b548; 
+    
+    
+}
+
+footer {
+    background: #59b548;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
 }
