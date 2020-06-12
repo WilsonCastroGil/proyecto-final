@@ -47,17 +47,20 @@ if (isset($_POST['btnlogin'])){
 		if($admin == 1 ){
 			$perfil="Admin";
 			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
-
+            echo "1";
 		}
 
 		if($instructor == 1){
 			$perfil= "Instructor";
 			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
+			echo "2";
 		}
 
 		if($aprendiz == 1) {
 			$perfil= "Aprendiz";
 			$_SESSION["perfil"] = $admin.';'.$instructor.';'.$aprendiz;
+
+			echo "3";
 		}
 	}
 
@@ -69,7 +72,7 @@ if (isset($_POST['btnlogin'])){
 // 	print_r($_POST);
 // print_r($_SESSION);
 
-echo "1";
+
 // // echo $_SESSION["user"]." ".$_SESSION["perfil"]." ha iniciado sesion";
 
 

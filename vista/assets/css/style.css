@@ -22,28 +22,28 @@
 }
 
 .naranja{
-    color:#F5860E; 
+    color:#fc7323; 
     
     
 }
 
 .verde{
  
-    color:#05747B; 
+    color:#238276; 
     
     
 }
 
 .btn-verde{
     color:#fff;
-    background-color:#05747B;
+    background-color:#238276;
     transition: 0.5s
 }
 
 .btn-verde:hover{
   background-color: #59b548;
-  color: #05747B;
-  border: 2px #05747B solid 
+  color: #05747B ;
+  border: 2px #fc7323 solid 
 }
 
 
@@ -76,3 +76,10 @@ background: url('../images/fondillo.jpg');
     color: white;
     text-align: center;
   }
+
+  .bgverde{
+ 
+    background-color:#238276; 
+    
+    
+}

@@ -18,13 +18,26 @@ function loginUser(){
 		console.log(res);
 		if (this.res === 1 ) {
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			// alert("hasta aca vamos ok");
+			alert("hasta aca vamos ok");
 			// console.log();
 			// Método para cambiar de vista en la url:
 			window.location = "../vista/configuracion.php";
 		}else {
+
+			if (this.res === 2) {
+				
+				window.location = "../vista/vinstructor.php";
+			} else {
+
+				if (this.res === 3) {
+					window.location = "../vista/vaprendiz.php";
+				} else {
+					$("#resultado").html(res);
+				}
+				
+			}
 			// Si no es posible convertirlo en numero, entonces me muestra lo que trae res (respuesta):
-			$("#resultado").html(res);
+			
 		}	
 	});
 }
