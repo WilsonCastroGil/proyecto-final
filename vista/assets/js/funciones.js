@@ -138,3 +138,20 @@ function crudficha(btn){
 		$("#alertaficha").html(res);
 	})
 }
+
+function crudcompetencia(btn){
+	var datoForm = $("#formcompetencia").serialize();
+	var datoReg = datoForm+'&btnopcion='+btn;
+	alert (datoReg);
+	console.log();
+	// Control asicronico:
+	$.ajax({
+		type: "POST",
+		url: "../controller/competencia.php",
+		data: datoReg
+	})
+	.done(function(res){
+		console.log(res);
+		$("#alertacomp").html(res);
+	})
+}

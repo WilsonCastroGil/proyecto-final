@@ -20,7 +20,7 @@ $createcon->set_charset("utf8");
 	<div class="row">
 
 		
-   <h3 class="text-center  col-md-12 mt-2">Asignar Horarios:
+   <h3 class="text-center  col-md-12 mt-2 naranja">Asignar Horarios:
     <svg class="bi bi-stopwatch" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
       <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5a.5.5 0 0 1 .5-.5zM5.5.5A.5.5 0 0 1 6 0h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
@@ -31,7 +31,7 @@ $createcon->set_charset("utf8");
   <div class="col">
 
     <h5 class="text-center text-left">Lunes</h5>
-    <button class="btn btn-success  " data-toggle="modal" data-target="#exampleModal" data-whatever="1">
+    <button class="btn btn-success  bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="1">
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
         <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
@@ -43,7 +43,7 @@ $createcon->set_charset("utf8");
   </div>
   <div class="col">
     <h5 class="text-center text-left">Martes</h5>
-    <button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="2">
+    <button class="btn btn-success bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="2">
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
         <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
@@ -54,7 +54,7 @@ $createcon->set_charset("utf8");
   </div>
   <div class="col">
     <h4 class="text-center text-left">Miércoles</h4>
-    <button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="3">
+    <button class="btn btn-success bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="3">
 
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
@@ -66,7 +66,7 @@ $createcon->set_charset("utf8");
   </div>
   <div class="col">
     <h4 class="text-center text-left">Jueves</h4>
-    <button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="4">
+    <button class="btn btn-success bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="4">
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
         <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
@@ -78,7 +78,7 @@ $createcon->set_charset("utf8");
   </div>
   <div class="col">
     <h4 class="text-center text-left">Viernes</h4>
-    <button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="5">
+    <button class="btn btn-success bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="5">
 
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
@@ -89,7 +89,7 @@ $createcon->set_charset("utf8");
   </div>
   <div class="col">
     <h4 class="text-center text-left">Sábado</h4>
-    <button class="btn btn-success n" data-toggle="modal" data-target="#exampleModal" data-whatever="6">
+    <button class="btn btn-success bordes" data-toggle="modal" data-target="#exampleModal" data-whatever="6">
       <svg class="bi bi-person-plus-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
         <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
@@ -104,13 +104,13 @@ $createcon->set_charset("utf8");
 
   <!-- Seccion de vista de horario -->
 
-  <div class="col-md-12 mt-5 bg-white pb-3">
-   <div class="table-responsive col-md-12">
+  <div class="col-md-12 mt-5  pb-3">
+   <div class="table-responsive col-md-12 bordes">
 
 
     <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
       <li class="nav-item col-md-2">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
+        <a class="nav-link active " id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
       </li>
       <li class="nav-item  col-md-2">
         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
@@ -131,9 +131,9 @@ $createcon->set_charset("utf8");
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="Lunes" role="tabpanel" aria-labelledby="home-tab">
 
-        <table  id ="tsemana" class="table-striped display" width="100%" height="200px">
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
          <thead class="thead-dark">
-          <tr class="text-primary"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-primary text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
           <?php 
 
@@ -146,7 +146,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
               $count=$cont+1;
 
@@ -168,7 +168,7 @@ $createcon->set_charset("utf8");
       <div class="tab-pane fade" id="Martes" role="tabpanel" aria-labelledby="contact-tab"> 
         <table  id="tsemana" class="table-striped display "  width="100%" height="200px">
          <thead class=" text-primary">
-          <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
           <?php 
 
@@ -181,7 +181,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
               $count=$cont+1;
 
@@ -204,11 +204,11 @@ $createcon->set_charset("utf8");
       <div class="tab-pane fade" id="Miercoles" role="tabpanel" aria-labelledby="contact-tab">
        <table id="tsemana" class="table-striped display" width="100%" height="200px">
          <thead class=" text-primary">
-          <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
           <?php 
 
-          $sql="select * from v_asignacion where dia ='miercoles'";
+          $sql="select * from v_detalleasignacion where dia ='miercoles'";
 
           $exe = $createcon->query($sql);
 
@@ -217,7 +217,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
               $count=$cont+1;
 
@@ -239,11 +239,11 @@ $createcon->set_charset("utf8");
       <div class="tab-pane fade" id="Jueves" role="tabpanel" aria-labelledby="contact-tab">
         <table class="table-striped " width="100%" height="200px">
          <thead class=" text-primary">
-          <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
           <?php 
 
-          $sql="select * from v_asignacion where dia ='jueves'";
+          $sql="select * from v_detalleasignacion where dia ='jueves'";
 
           $exe = $createcon->query($sql);
 
@@ -252,7 +252,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
               $count=$cont+1;
 
@@ -275,11 +275,11 @@ $createcon->set_charset("utf8");
 
        <table class="table-striped table " width="100%" height="200px">
         <thead class=" text-primary">
-          <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
           <?php 
 
-          $sql="select * from v_asignacion where dia ='viernes'";
+          $sql="select * from v_detalleasignacion where dia ='viernes'";
 
           $exe = $createcon->query($sql);
 
@@ -288,7 +288,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
               $count=$cont+1;
 
@@ -310,11 +310,11 @@ $createcon->set_charset("utf8");
       <div class="tab-pane fade" id="Sabado" role="tabpanel" aria-labelledby="contact-tab">
         <table class="table-striped " width="100%" height="200px">
           <thead class=" text-primary">
-            <tr><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+            <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
 
             <?php 
 
-            $sql="select * from v_asignacion where dia ='sabado'";
+            $sql="select * from v_detalleasignacion where dia ='sabado'";
 
             $exe = $createcon->query($sql);
 
@@ -323,7 +323,7 @@ $createcon->set_charset("utf8");
               $cont=0;
 
               while ($res=$exe->fetch_row()) {
-                echo '<tr><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+                echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
 
                 $count=$cont+1;
 

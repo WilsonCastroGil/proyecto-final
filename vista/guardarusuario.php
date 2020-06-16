@@ -20,7 +20,7 @@ $createcon->set_charset("utf8");
 
 
 
-    <section class="container-fluid bg mt-5">
+    <section class="container-fluid bg mt-2">
 
 
 

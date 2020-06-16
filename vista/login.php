@@ -6,30 +6,30 @@ include('cabezalogin.inc');
 ?>
 
 <div class="row-12">
-<div class="pos-f-t">
-			<div class="collapse" id="navbarToggleExternalContent">
-				<div class="bg-dark p-4">
-					<h4 class="naranja">Chekinassist</h4>
-					<span class="text-light">Debes iniciar sesion para continuar,<br>
-						en chekinassist puedes visualizar <br>
-						tu horario en caso de ser un aprendiz o un instructor, <br>
-						si tienes varios perfiles podras cambiarlos en la pestaña <br>
-						configuracion</span>
-				</div>
+	<div class="pos-f-t">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<h4 class="naranja">Chekinassist</h4>
+				<span class="text-light">Debes iniciar sesion para continuar,<br>
+					en chekinassist puedes visualizar <br>
+					tu horario en caso de ser un aprendiz o un instructor, <br>
+					si tienes varios perfiles podras cambiarlos en la pestaña <br>
+					configuracion</span>
 			</div>
-			<nav class="navbar navbar-dark bgverdea bordes">
-				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<a title="Sena / Public domain"><img width="35" alt="Sena Colombia logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/64px-Sena_Colombia_logo.svg.png"></a>
-				</button>
-
-				<div class="text-center text-dark verde">
-
-					Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.
-				</div>
-
-			</nav>
-
 		</div>
+		<nav class="navbar navbar-dark bgverdea bordes">
+			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<a title="Sena / Public domain"><img width="35" alt="Sena Colombia logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/64px-Sena_Colombia_logo.svg.png"></a>
+			</button>
+
+			<div class="text-center text-dark verde">
+
+				<h5>Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.</h5>
+			</div>
+
+		</nav>
+
+	</div>
 
 </div>
 
@@ -39,7 +39,7 @@ include('cabezalogin.inc');
 
 	<div class="row-12">
 
-		
+
 
 
 		<div class="row">
@@ -77,49 +77,58 @@ include('cabezalogin.inc');
 </section>
 
 
-<!-- Footer -->
-<footer class="page-footer font-small teal p-1 footer bordes">
 
-  <!-- Footer Text -->
-  <div class="container-fluid text-center text-md-left">
 
-    <!-- Grid row -->
-    <div class="row">
+	<!-- Footer -->
+	<footer class="page-footer font-small teal p-1 footer ">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+		<!-- Footer Text -->
+		<div class="container-fluid text-center text-md-left">
 
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Aviso</h5>
-        <p>
-			recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
-		</p>
+			<!-- Grid row -->
+			<div class="row">
 
-      </div>
-      <!-- Grid column -->
+				<!-- Grid column -->
+				<div class="col-md-6 mt-md-0 mt-3">
 
-      <hr class="clearfix w-100 d-md-none pb-3">
+					<!-- Content -->
+					<h6 class="text-uppercase font-weight-bold">Aviso</h6>
+					<p>
+						recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
+					</p>
 
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
+				</div>
+				<!-- Grid column -->
 
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">¡Recuerda!</h5>
-        <p>Solo puedes tener un perfil activo en caso de tener mas de 1,
-			si tienes problemas para visualiar tu horario  debes filtrar los resultados ,
-			así la visualizacion es mas fácil.</p>
+				<hr class="clearfix w-100 d-md-none pb-3">
 
-      </div>
-      <!-- Grid column -->
+				<!-- Grid column -->
+				<div class="col-md-6 mb-md-0 mb-3">
 
-    </div>
-    <!-- Grid row -->
+					<!-- Content -->
+					<h6 class="text-uppercase font-weight-bold">¡Recuerda!</h6>
+					<p>Solo puedes tener un perfil activo en caso de tener mas de 1,
+						si tienes problemas para visualiar tu horario debes filtrar los resultados ,
+						así la visualizacion es mas fácil.</p>
 
-  </div>
-  <!-- Footer Text -->
+				</div>
+				<!-- Grid column -->
 
-  <!-- Copyright -->
-  
-  <!-- Copyright -->
+			</div>
 
-</footer>
+			<div class="row-12 text-center ">
+
+			<h6>copyright sena 2020</h6>
+
+			</div>
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Text -->
+
+		<!-- Copyright -->
+
+		<!-- Copyright -->
+
+	</footer>
+

@@ -4,11 +4,15 @@
 	$con = New Conexion();
 	$conectar=$con->conectar();
 
-	if (isset($_POST['registrarCompetencia'])) {
+	if (isset($_POST['btnopcion'])) { 
+
+		if ($_POST['btnopcion'] == 'guardar'){
+
+		
 
 	   $idPrograma =$_POST['idPrograma'];
-	   $nombre =$_POST['nombre'];
-	   $codigo =$_POST['codigo'];
+	   $nombre =$_POST['nombrecomp'];
+	   $codigo =$_POST['codigocomp'];
 	   $estado =1;
 	   $opcion ='guardar';
 
@@ -36,8 +40,6 @@
 
 			echo "error, no hay datos";
 
+			}
 		}
 	}
-
-
- ?>

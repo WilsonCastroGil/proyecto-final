@@ -28,67 +28,98 @@ if ($_SESSION["perfil"] != '0;1;0') {
 
 <section class="container">
 
-    <div class=" row mt-5">
+    <div class=" row ">
 
         <div class="col mt-5">
-            <div class="jumbotron bordes ">
+            <div class="jumbotron bordes mx-auto ">
                 <h1 class="display-4 naranja">Bienvenido Instructor</h1>
-                <p class="lead verde">Aquí podrás ver tu horario de instructor asignado.</p>
-      
-                
+                <p class="lead text-dark h6">Aquí podrás ver tu horario de instructor asignado.</p>
 
-                <table  id="tinstructor" class=" table table-striped bordes w-auto h-auto">
-                                    <thead class="bgverdea">
-                                        <tr>
-                                            <th class="text-light">Numero de ficha</th>
-                                            <th class="text-light">Ambiente</th>
-                                            <th class="text-light">Dia</th>
-                                            <th class="text-light">Competencia</th>
-                                            <th class="text-light">Instructor</th>
-                                            <th class="text-light">Trimestre</th>
-                                            <th class="text-light">Hora inicio</th>
-                                            <th class="text-light">Hora fin</th>
-                                        </tr>
-                                    </thead>
+                <div class="container-responsive">
 
-                                    <?php
+                <table id="tinstructor" class=" table table-responsive table-striped" >
+                    <thead class="bgverdea">
+                        <tr class="text-center">
+                            <th class="text-light">#ficha</th>
+                            <th class="text-light">Ambiente</th>
+                            <th class="text-light">Dia</th>
+                            <th class="text-light">Competencia</th>
+                            <th class="text-light">Instructor</th>
+                            <th class="text-light">Trimestre</th>
+                            <th class="text-light">H.inicio</th>
+                            <th class="text-light">H.fin</th>
+                        </tr>
+                    </thead>
 
-                                    $sql = "select * from v_detalleasignacion where Instructor ='".$_SESSION['user']."'";
+                    <?php
 
-                                    $exe = $createcon->query($sql);
+                    $sql = "select * from v_detalleasignacion where Instructor ='" . $_SESSION['user'] . "'";
 
-                                    if ($exe->num_rows > 0) {
+                    $exe = $createcon->query($sql);
 
-                                        $cont = 0;
+                    if ($exe->num_rows > 0) {
 
-                                        while ($res = $exe->fetch_row()) {
-                                            echo '<tr><td>' . $res[0] . '</td><td>' . $res[1] . '</td><td>' . $res[2] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+                        $cont = 0;
 
-                                            $count = $cont + 1;
-                                        }
-                                    } else {
+                        while ($res = $exe->fetch_row()) {
+                            echo '<tr class="text-center h6"><td>' . $res[0] . '</td><td>' . $res[1] . '</td><td>' . $res[2] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
 
-                                        echo "no se encontraron datos";
-                                    }
+                            $count = $cont + 1;
+                        }
+                    } else {
 
-
-                                    ?>
-
-                                </table>
-                
+                        echo "no se encontraron datos";
+                    }
 
 
+                    ?>
 
-                
+                </table>
+
+
+                </div>
+
+
             </div>
 
         </div>
 
     </div>
 
+
+
 </section>
+<div class="row-12 mb-0 ">
+
+    <footer class="page-footer font-small teal pt-2 bgverdea h-25">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center ">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 mt-md-4 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold "></h5>
+
+
+                </div>
+                <!-- Grid column -->
 
 
 
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
 
 
+    </footer>
+    <!-- Footer -->
+
+
+</div>

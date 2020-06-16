@@ -1,10 +1,10 @@
 
 
 .bg{
-    background: url('../images/loginback.jpg')no-repeat;
+    background: url('../images/loginback.jpg');
     width: 100%;   
 
-    background-size:cover;
+    background-size:auto;
    
     
 }
@@ -41,9 +41,9 @@
 }
 
 .btn-verde:hover{
-  background-color: #59b548;
+  background-color: #fc7323;
   color: #05747B ;
-  border: 2px #fc7323 solid 
+  border: 2px #59b548 solid 
 }
 
 
@@ -51,8 +51,8 @@
 
 position: center;
 
-border-radius: 20px;
-box-shadow: 0px 0px 10px 0px rgb(37, 116, 30);
+border-radius: 10px;
+box-shadow: 0px 0px 20px 0px rgb(37, 116, 30);
 
 }
 
@@ -66,8 +66,8 @@ background: url('../images/fondillo.jpg');
 
 }
 
-.footer {
-    position: fixed;
+/* .footer {
+   
     left: 0;
     bottom: 0;
     right: 0;
@@ -75,7 +75,7 @@ background: url('../images/fondillo.jpg');
     background-color: #05747B;
     color: white;
     text-align: center;
-  }
+  } */
 
     .bgverde {
  
@@ -91,9 +91,15 @@ background: url('../images/fondillo.jpg');
     
 }
 
+
 footer {
-    background: #59b548;
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    padding: 20px;
-}
+    height: 12%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #000000;
+    background-color: #59b548;
+    clear: both;
+  }
