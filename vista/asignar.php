@@ -133,7 +133,18 @@ $createcon->set_charset("utf8");
 
         <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
          <thead class="thead-dark">
-          <tr class="text-primary text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
 
           <?php 
 
@@ -146,7 +157,17 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+              echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
 
               $count=$cont+1;
 
@@ -166,9 +187,20 @@ $createcon->set_charset("utf8");
         </table>
       </div>
       <div class="tab-pane fade" id="Martes" role="tabpanel" aria-labelledby="contact-tab"> 
-        <table  id="tsemana" class="table-striped display "  width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+                 <thead class="thead-dark">
+                  <tr class="text-primary text-center">
+                    <th>Numero de ficha</th>
+                    <th>Ambiente</th>
+                    <th>Dia</th>
+                    <th>Nombre Comp</th>
+                    <th>Instructor</th>
+                    <th>Trimestre</th>
+                    <th>Hora inicio</th>
+                    <th>Hora fin</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
 
           <?php 
 
@@ -181,8 +213,17 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+               echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
               $count=$cont+1;
 
             }
@@ -202,9 +243,20 @@ $createcon->set_charset("utf8");
 
       </div>
       <div class="tab-pane fade" id="Miercoles" role="tabpanel" aria-labelledby="contact-tab">
-       <table id="tsemana" class="table-striped display" width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+      <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th> 
+          </tr>
+        </thead>
 
           <?php 
 
@@ -217,7 +269,17 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+               echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
 
               $count=$cont+1;
 
@@ -237,9 +299,20 @@ $createcon->set_charset("utf8");
         </table>
       </div>
       <div class="tab-pane fade" id="Jueves" role="tabpanel" aria-labelledby="contact-tab">
-        <table class="table-striped " width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+       <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
 
           <?php 
 
@@ -252,8 +325,17 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+              echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
               $count=$cont+1;
 
             }
@@ -272,10 +354,20 @@ $createcon->set_charset("utf8");
         </table>
       </div>
       <div class="tab-pane fade" id="Viernes" role="tabpanel" aria-labelledby="contact-tab">
-
-       <table class="table-striped table " width="100%" height="200px">
-        <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+                 <thead class="thead-dark">
+                  <tr class="text-primary text-center">
+                    <th>Numero de ficha</th>
+                    <th>Ambiente</th>
+                    <th>Dia</th>
+                    <th>Nombre Comp</th>
+                    <th>Instructor</th>
+                    <th>Trimestre</th>
+                    <th>Hora inicio</th>
+                    <th>Hora fin</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
 
           <?php 
 
@@ -288,8 +380,17 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+               echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
               $count=$cont+1;
 
             }
@@ -308,9 +409,20 @@ $createcon->set_charset("utf8");
         </table>
       </div>
       <div class="tab-pane fade" id="Sabado" role="tabpanel" aria-labelledby="contact-tab">
-        <table class="table-striped " width="100%" height="200px">
-          <thead class=" text-primary">
-            <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th> 
+          </tr>
+        </thead>
 
             <?php 
 
@@ -323,7 +435,17 @@ $createcon->set_charset("utf8");
               $cont=0;
 
               while ($res=$exe->fetch_row()) {
-                echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+                 echo '<tr class="text-center">
+                <td>'.$res[0].'</td>
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
+              </tr>';
 
                 $count=$cont+1;
 
