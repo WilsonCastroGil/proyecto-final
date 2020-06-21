@@ -32,7 +32,18 @@ function loginUser(){
 				if (this.res === 3) {
 					window.location = "../vista/vaprendiz.php";
 				} else {
-					$("#resultado").html(res);
+					if (this.res==12) {
+
+							
+
+
+
+
+
+						
+					}
+
+				
 				}
 				
 			}
@@ -42,7 +53,7 @@ function loginUser(){
 	});
 }
 
-
+$("#resultado").html(res);
 
 // funcion de buscar y mostrar tabla
 

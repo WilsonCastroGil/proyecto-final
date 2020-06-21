@@ -3,6 +3,7 @@
 session_start();
 include('cabezalogin.inc');
 // print_r($_SESSION);
+
 ?>
 
 <div class="row-12">
@@ -17,14 +18,14 @@ include('cabezalogin.inc');
 					configuracion</span>
 			</div>
 		</div>
-		<nav class="navbar navbar-dark bgverdea bordes">
+		<nav class="navbar navbar-dark bg-transparent bordes">
 			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 				<a title="Sena / Public domain"><img width="35" alt="Sena Colombia logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/64px-Sena_Colombia_logo.svg.png"></a>
 			</button>
 
 			<div class="text-center text-dark verde">
 
-				<h5>Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.</h5>
+					<h5>Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.</h5>
 			</div>
 
 		</nav>
@@ -84,7 +85,11 @@ include('cabezalogin.inc');
 
 		<!-- Footer Text -->
 		<div class="container-fluid text-center text-md-left">
+		<div class="row-12 text-center ">
 
+<h6>copyright sena 2020</h6>
+
+</div>
 			<!-- Grid row -->
 			<div class="row">
 
@@ -92,7 +97,7 @@ include('cabezalogin.inc');
 				<div class="col-md-6 mt-md-0 mt-3">
 
 					<!-- Content -->
-					<h6 class="text-uppercase font-weight-bold">Aviso</h6>
+					<h6 class="text-uppercase font-weight-bold naranja">Aviso</h6>
 					<p>
 						recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
 					</p>
@@ -106,7 +111,7 @@ include('cabezalogin.inc');
 				<div class="col-md-6 mb-md-0 mb-3">
 
 					<!-- Content -->
-					<h6 class="text-uppercase font-weight-bold">¡Recuerda!</h6>
+					<h6 class="text-uppercase font-weight-bold naranja">¡Recuerda!</h6>
 					<p>Solo puedes tener un perfil activo en caso de tener mas de 1,
 						si tienes problemas para visualiar tu horario debes filtrar los resultados ,
 						así la visualizacion es mas fácil.</p>
@@ -116,11 +121,7 @@ include('cabezalogin.inc');
 
 			</div>
 
-			<div class="row-12 text-center ">
-
-			<h6>copyright sena 2020</h6>
-
-			</div>
+			
 			<!-- Grid row -->
 
 		</div>

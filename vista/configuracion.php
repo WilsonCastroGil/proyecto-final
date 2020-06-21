@@ -21,8 +21,32 @@ if ($_SESSION["perfil"] != '1;0;0') {
 	exit;
 }
 
-
 ?>
+
+<script type="text/javascript">
+
+            function cargarDepto(id) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("cargardepto").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "depto.php?idpais=" + id, true);
+                xhttp.send();
+            }
+            function cargarMunic(id_Munic) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("cargarMunic").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "Munic.php?idMunic=" + id_Munic, true);
+                xhttp.send();
+            }
+        </script>
+
 
 <div class="container mt-4">
 
@@ -154,6 +178,27 @@ if ($_SESSION["perfil"] != '1;0;0') {
 								<form>
 									<div class="form-row">
 
+								
+                                                            <select id="pais"  onchange="cargarDepto(this.value)" class="form-control rounded-pill">
+                                                                <option value="0">Seleccione un país</option>
+																<?php
+																$res = $createcon->query("SELECT * FROM `pais` order by nombre");
+																
+																while ($campos = $res->fetch_object()) { ?>
+                                                                    <option value="<?php echo $campos->idPais; ?>"><?php echo $campos->nombre; ?></option>
+                                                                    <?php
+                                                                }
+                                                                ?>
+                                                            </select>
+                                                      
+									</div>
+
+									<div class="form-row">
+															<div id="cargardepto" class="mx-auto" >
+                                                                <select id="departamento"class="form-control rounded-pill">
+                                                                    <option value="0">Seleccione un departamento</option>
+                                                                </select>
+                                                            </div>
 
 									</div>
 
