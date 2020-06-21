@@ -14,6 +14,13 @@ $createcon->set_charset("utf8");
   $(document).ready(function() {
     $('#tsemana.display').DataTable();
   } );
+
+  function confirmDelete(id){
+    var r=confirm("¿Estas seguro de eliminar este registro?");
+    if (r==true){
+      window.location.href = "asignar.php?eliminar&id="+id;
+    }
+  }
 </script>
 
 <section class="container">
@@ -142,11 +149,17 @@ $createcon->set_charset("utf8");
             <th>Trimestre</th>
             <th>Hora inicio</th>
             <th>Hora fin</th>
-            <th>Eliminar</th>
+            <th>Opcion</th>
           </tr>
         </thead>
 
           <?php 
+          if (isset($_GET['eliminar'])) {
+
+            $sqlDelete = "delete from detalleasignacion where idDetalleA='".$_GET['id']."'";
+            $res = $createcon->query($sqlDelete);
+          }
+
 
           $sql="select * from v_detalleasignacion where dia ='lunes'";
 
@@ -158,7 +171,6 @@ $createcon->set_charset("utf8");
 
             while ($res=$exe->fetch_row()) {
               echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -166,14 +178,15 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
-
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
-
             }
-
-
+            
           }
           else{
 
@@ -213,8 +226,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-               echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
+                 echo '<tr class="text-center">
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -222,8 +234,12 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -269,8 +285,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-               echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
+                  echo '<tr class="text-center">
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -278,8 +293,12 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
 
               $count=$cont+1;
 
@@ -325,8 +344,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
+                 echo '<tr class="text-center">
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -334,8 +352,12 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -380,8 +402,7 @@ $createcon->set_charset("utf8");
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-               echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
+                 echo '<tr class="text-center">
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -389,8 +410,12 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -435,8 +460,7 @@ $createcon->set_charset("utf8");
               $cont=0;
 
               while ($res=$exe->fetch_row()) {
-                 echo '<tr class="text-center">
-                <td>'.$res[0].'</td>
+                   echo '<tr class="text-center">
                 <td>'.$res[1].'</td>
                 <td>'.$res[2].'</td>
                 <td>'.$res[3].'</td>
@@ -444,8 +468,12 @@ $createcon->set_charset("utf8");
                 <td>'.$res[5].'</td>
                 <td>'.$res[6].'</td>
                 <td>'.$res[7].'</td>
-                <td><button class="btn btn-info btn-danger" type="submit" value="Eliminar" name="accion" >Eliminar</button></ytd>
-              </tr>';
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
 
                 $count=$cont+1;
 

@@ -42,7 +42,12 @@ function loginUser(){
 	});
 }
 
-
+function confirmDelete(id){
+    var r=confirm("¿Estas seguro de eliminar este registro?");
+    if (r==true){
+      window.location.href = "asignar.php?eliminar&id="+id;
+    }
+  }
 
 // funcion de buscar y mostrar tabla
 
