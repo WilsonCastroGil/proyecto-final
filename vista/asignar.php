@@ -21,6 +21,13 @@ function myFunction() {
   $(document).ready(function() {
     $('#tsemana.display').DataTable();
   } );
+
+  function confirmDelete(id){
+    var r=confirm("¿Estas seguro de eliminar este registro?");
+    if (r==true){
+      window.location.href = "asignar.php?eliminar&id="+id;
+    }
+  }
 </script>
 
 <section class="container">
@@ -144,9 +151,26 @@ LUNES</a>
 
         <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
          <thead class="thead-dark">
-          <tr class="text-primary text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Opcion</th>
+          </tr>
+        </thead>
 
           <?php 
+          if (isset($_GET['eliminar'])) {
+
+            $sqlDelete = "delete from detalleasignacion where idDetalleA='".$_GET['id']."'";
+            $res = $createcon->query($sqlDelete);
+          }
+
 
           $sql="select * from v_detalleasignacion where dia ='lunes'";
 
@@ -157,13 +181,23 @@ LUNES</a>
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+              echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
-
             }
-
-
+            
           }
           else{
 
@@ -177,9 +211,20 @@ LUNES</a>
         </table>
       </div>
       <div class="tab-pane fade" id="Martes" role="tabpanel" aria-labelledby="contact-tab"> 
-        <table  id="tsemana" class="table-striped display "  width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+                 <thead class="thead-dark">
+                  <tr class="text-primary text-center">
+                    <th>Numero de ficha</th>
+                    <th>Ambiente</th>
+                    <th>Dia</th>
+                    <th>Nombre Comp</th>
+                    <th>Instructor</th>
+                    <th>Trimestre</th>
+                    <th>Hora inicio</th>
+                    <th>Hora fin</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
 
           <?php 
 
@@ -192,8 +237,20 @@ LUNES</a>
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+                 echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -213,9 +270,20 @@ LUNES</a>
 
       </div>
       <div class="tab-pane fade" id="Miercoles" role="tabpanel" aria-labelledby="contact-tab">
-       <table id="tsemana" class="table-striped display" width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+      <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th> 
+          </tr>
+        </thead>
 
           <?php 
 
@@ -228,7 +296,20 @@ LUNES</a>
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+                  echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
 
               $count=$cont+1;
 
@@ -248,9 +329,20 @@ LUNES</a>
         </table>
       </div>
       <div class="tab-pane fade" id="Jueves" role="tabpanel" aria-labelledby="contact-tab">
-        <table class="table-striped " width="100%" height="200px">
-         <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+       <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
 
           <?php 
 
@@ -263,8 +355,20 @@ LUNES</a>
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+                 echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -283,10 +387,20 @@ LUNES</a>
         </table>
       </div>
       <div class="tab-pane fade" id="Viernes" role="tabpanel" aria-labelledby="contact-tab">
-
-       <table class="table-striped table " width="100%" height="200px">
-        <thead class=" text-primary">
-          <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+                 <thead class="thead-dark">
+                  <tr class="text-primary text-center">
+                    <th>Numero de ficha</th>
+                    <th>Ambiente</th>
+                    <th>Dia</th>
+                    <th>Nombre Comp</th>
+                    <th>Instructor</th>
+                    <th>Trimestre</th>
+                    <th>Hora inicio</th>
+                    <th>Hora fin</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
 
           <?php 
 
@@ -299,8 +413,20 @@ LUNES</a>
             $cont=0;
 
             while ($res=$exe->fetch_row()) {
-              echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
-
+                 echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
               $count=$cont+1;
 
             }
@@ -319,9 +445,20 @@ LUNES</a>
         </table>
       </div>
       <div class="tab-pane fade" id="Sabado" role="tabpanel" aria-labelledby="contact-tab">
-        <table class="table-striped " width="100%" height="200px">
-          <thead class=" text-primary">
-            <tr class="text-center"><th>Numero de ficha</th><th>Ambiente</th><th>Dia</th><th>Nombre Comp</th><th>Instructor</th><th>Trimestre</th><th>Hora inicio</th><th>Hora fin</th> </tr></thead>
+        <table  id ="tsemana" class="table-striped display " width="100%" height="100%">
+         <thead class="thead-dark">
+          <tr class="text-primary text-center">
+            <th>Numero de ficha</th>
+            <th>Ambiente</th>
+            <th>Dia</th>
+            <th>Nombre Comp</th>
+            <th>Instructor</th>
+            <th>Trimestre</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Eliminar</th> 
+          </tr>
+        </thead>
 
             <?php 
 
@@ -334,7 +471,20 @@ LUNES</a>
               $cont=0;
 
               while ($res=$exe->fetch_row()) {
-                echo '<tr class="text-center"><td>'.$res[0].'</td><td>'.$res[1].'</td><td>'.$res[2].'</td><td>'.$res[3].'</td><td>'.$res[4].'</td><td>'.$res[5].'</td><td>'.$res[6].'</td><td>'.$res[7].'</td></tr>';
+                   echo '<tr class="text-center">
+                <td>'.$res[1].'</td>
+                <td>'.$res[2].'</td>
+                <td>'.$res[3].'</td>
+                <td>'.$res[4].'</td>
+                <td>'.$res[5].'</td>
+                <td>'.$res[6].'</td>
+                <td>'.$res[7].'</td>
+                <td>'.$res[8].'</td>
+                <td>';
+              
+              echo "<a href='#' class='btn btn-danger' onclick='confirmDelete($res[0]);'>Eliminar</button>
+                </td>
+              </tr>";
 
                 $count=$cont+1;
 
