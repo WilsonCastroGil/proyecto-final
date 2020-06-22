@@ -24,84 +24,74 @@ if (isset($_POST["enviar"])) {//nos permite recepcionar una variable que si exis
 	}else{
 		echo "hubo un error <br/>";
 	}
-    
-    if (file_exists($archivo_guardado)) {
-    	 
-    	 $fp = fopen($archivo_guardado,"r");//abrir un archivo
-    	 $data=array();
-         $rows = 0;
 
-         while ($datos = fgetcsv($fp , 1000 , ";")) {
-         	    $rows ++;	
+	if (file_exists($archivo_guardado)) {
+
+    	 $fp = fopen($archivo_guardado,"r");//abrir un archivo
+    	 #$data=array();
+    	 $rows = 0;
+
+    	while ($datos = fgetcsv($fp , 1000 , ";")) {
+    	 	$rows ++;	
          	  #echo $datos[0];
          	    # echo $datos[0] ." ".$datos[1] ." ".$datos[2]." ".$datos[3] ." ".$datos[4] ." ".$datos[5] ." ".$datos[6] ." ".$datos[7] ."<br/>";
-         	
-         	if ($rows > 1) {
 
-         		#$sql ="call sp_GuardarUsuario('$datos[0]','$datos[1]','$datos[2]','$datos[3]','$datos[4]','$datos[5]','$datos[6]','$datos[7]')";
-         		
-         		#$res = $conectar->query($sql);
-         		# $row = $res->fetch_object();
-         		#var_dump($res);
-         		$resultado = insertar_datos($datos[0],$datos[1],$datos[2],$datos[3],$datos[4],$datos[5],$datos[6],$datos[7]);
-
-				 #$data[]='('.$datos[0].',"'.$datos[1].'","'.$datos[2].'","'.$datos[3].'","'.$datos[4].'","'.$datos[5].'","'.$datos[6].'",'.$datos[7].')'; 
-         	
-				#print_r($res)
-				if($resultado){
-	         		echo "se inserto los datos correctamnete<br/>";
-	         	}else{
-	         		echo "no se inserto <br/>";
-	         	}
-
-			}
-
-	 	}
-	 
-
+    	 	if ($rows > 1) {
+    	 		$resultado = insertar_datos($datos[0],$datos[1],$datos[2],$datos[3],$datos[4],$datos[5],$datos[6],$_POST["ficha"],$_POST["jornada"]);
+				#print_r($_POST);
+    	 		if($resultado){
+    	 			echo "se inserto los datos correctamnete<br/>";
+    	 		}else{
+    	 			echo "no se inserto <br/>";
+    	 		}
+    	 	}
+        }
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Dubir archivo a la BD mysql</title>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-	 
-	 <div class="formulario">
-	 	<form action="index.php" class="formulariocompleto" method="post" enctype="multipart/form-data">
-	 		 <input type="file" name="archivo" class="form-control"/>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Dubir archivo a la BD mysql</title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
 
-<select>jornada 
-			<option value="1800">
-				1800890
-			</option>
+    	<div class="formulario">
+    		<form action="index.php" class="formulariocompleto" method="post" enctype="multipart/form-data">
+    			<input type="file" name="archivo" class="form-control"/>
+    			<div class="form-group col-sm-6">
+    				<label for="ambiente" class="col-form-label">FICHA:</label>
+    				<select  class="form-control border-success" name="ficha">
+    					<option value="" disabled="" >Seleccione una ficha</option>
+    					<?php  
+    					require_once("conexion.php");
 
-			<option>
-				31252
-			</option>
+    					$con = new Conexion();
+    					$conectar=$con->conectar();
 
-	 		</select>
-
-	 		<select>ficha 
-			<option value="1800">
-				1800890
-			</option>
-
-			<option>
-				31252
-			</option>
-
-	 		</select>
-
-
-
-	 		<input type="submit" value="SUBIR ARCHIVO" class="form-control" name="enviar">
-	 		
-	 	</form>
-	 </div>
-</body>
-</html>
+    					$sql = "SELECT * from ficha";
+    					$exe = $conectar->query($sql);
+    					$con->error;
+    					while($res = $exe->fetch_row()){
+    						echo '<option value="'.$res[0].'">'.$res[5].'</option>';
+    					}
+    					?>
+    				</select>
+    			</div>
+    			<br>
+    			<div>
+    				<label for="">Jornada</label>
+    				<select name="jornada" id="">
+    					<option value="mañana">mañana</option>
+    					<option value="tarde">Tarde</option>
+    					<option value="noche">Noche</option>
+    				</select>
+    			</div>
+    			<br>
+    			<input type="submit" value="SUBIR ARCHIVO" class="form-control" name="enviar">
+    		</form>
+    	</div>
+    </body>
+    </html>
