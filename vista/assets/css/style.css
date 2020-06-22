@@ -30,7 +30,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 300px;
+    margin: 350px;
 
     -webkit-animation:girar 2.5s linear infinite ;
     -o-animation: girar 2.5s linear infinite;
@@ -39,7 +39,7 @@
 
 @keyframes girar{
     from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
+    to{transform: rotate(180deg);}
 
 }
 
@@ -146,5 +146,5 @@ footer {
     color: #000000;
     background-color: #59b548;
     clear: both;
-    opacity: 0.5;
+    opacity: 0.8;
   }

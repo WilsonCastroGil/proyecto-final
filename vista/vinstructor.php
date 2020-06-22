@@ -32,7 +32,7 @@ if ($_SESSION["perfil"] != '0;1;0') {
 
         <div class="col mt-5">
             <div class="jumbotron bordes mx-auto ">
-                <h1 class="display-4 naranja">Bienvenido Instructor</h1>
+                <h1 class="display-4 naranja">Bienvenido Instructor <?php echo "'".$_SESSION["user"]."'" ?> </h1>
                 <p class="lead text-dark h6">Aquí podrás ver tu horario de instructor asignado.</p>
 
                 <div class="container-responsive">
@@ -89,37 +89,54 @@ if ($_SESSION["perfil"] != '0;1;0') {
 
 
 </section>
-<div class="row-12 mb-0 ">
+<footer class="page-footer font-small teal p-1 footer  ">
 
-    <footer class="page-footer font-small teal pt-2 bgverdea h-25">
+		<!-- Footer Text -->
+		<div class="container-fluid text-center text-md-left">
+		<div class="row-12 text-center ">
 
-        <!-- Footer Text -->
-        <div class="container-fluid text-center ">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-12 mt-md-4 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold "></h5>
-
-
-                </div>
-                <!-- Grid column -->
-
-
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Text -->
-
-
-    </footer>
-    <!-- Footer -->
-
+<h6>copyright sena 2020</h6>
 
 </div>
+			<!-- Grid row -->
+			<div class="row config">
+
+				<!-- Grid column -->
+				<div class="col-md-6 mt-md-0 mt-3">
+
+					<!-- Content -->
+					<h6 class="text-uppercase font-weight-bold ">Aviso</h6>
+					<p>
+						recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
+					</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-6 mb-md-0 mb-3">
+
+					<!-- Content -->
+					<h6 class="text-uppercase font-weight-bold ">¡Recuerda!</h6>
+					<p>Solo puedes tener un perfil activo en caso de tener mas de 1,
+						si tienes problemas para visualiar tu horario debes filtrar los resultados ,
+						así la visualizacion es mas fácil.</p>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+
+			
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Text -->
+
+		<!-- Copyright -->
+
+		<!-- Copyright -->
+
+	</footer>

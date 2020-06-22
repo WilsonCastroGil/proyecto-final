@@ -9,13 +9,6 @@ $createcon->set_charset("utf8");
 ?>
 
 
-<script> 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
-
-
 <script type="text/javascript">
 
   $(document).ready(function() {
@@ -51,7 +44,6 @@ function myFunction() {
         <path fill-rule="evenodd" d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
       </svg>
       <br>
-   
       Asignar Instructor 
     </button>
 
@@ -125,10 +117,7 @@ function myFunction() {
 
     <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
       <li class="nav-item col-md-2">
-        <a class="nav-link active " id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">
-         
-</div> <br>
-LUNES</a>
+        <a class="nav-link active " id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
       </li>
       <li class="nav-item  col-md-2">
         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
