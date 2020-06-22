@@ -6,6 +6,22 @@ include('cabezalogin.inc');
 
 ?>
 
+<script>
+  window.onload=function(){
+    var contenedor=document.getElementById('contenedor_carga');
+    contenedor.style.visibility='hidden';
+    contenedor.style.opacity='0';
+  }
+
+</script>
+
+<div id="contenedor_carga">
+<div id="carga">
+
+</div>
+
+</div>
+
 <div class="row-12">
 	<div class="pos-f-t">
 		<div class="collapse" id="navbarToggleExternalContent">
