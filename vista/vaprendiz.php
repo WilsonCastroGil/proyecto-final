@@ -167,7 +167,6 @@ error_reporting(0);
                 </div>  <article class="text-danger"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
-
               ?>
 
             </table>
