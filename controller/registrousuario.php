@@ -7,9 +7,9 @@
 	// $exe = $conectar->query($sql);
 
 
- function guardarUsuario(){
+function guardarUsuario(){
  		# code...
- 		#if (isset($_POST['resgistroUsuarios'])) {
+ 		if (isset($_POST['resgistroUsuarios'])) {
 
 		# code...
 		$idTipoDoc =$_POST['idTipoDoc'];
@@ -37,7 +37,7 @@
 
 
 		// $exe = $con->query($sql);
-	$exe = $conectar->query($sql);
+		$exe = $conectar->query($sql);
 
 		if ($exe ->num_rows > 0) {
 			if ($res = $exe->fetch_row()) {
@@ -52,8 +52,10 @@
 			echo "error, no hay datos";
 
 		}
-	#}
-}	
+	
+	}	
+
+}
 
 function actualizarUsuario(){
 
@@ -88,30 +90,5 @@ function actualizarUsuario(){
 
 }
 
-function eliminarUsuario(){
-
-	if (isset($_POST['eliminarUsuarios'])) {
-
-		$documento  =$_POST['documento'];
-
-		$sql = "Call sp_EliminarUsuario('$documento')";
-
-		$exe = $conectar->query($sql);
-
-		if ($exe ->num_rows > 0) {
-			if ($res = $exe->fetch_row()) {
-
-				echo $res[0];
-			}else{
-				echo $con->error;
-			}
-			
-		}else{
-
-			echo "error, no hay datos";
-
-		}
-	}
-}
 
 ?>
