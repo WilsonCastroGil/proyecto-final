@@ -135,16 +135,29 @@ background: url('../images/fondillo.jpg');
     
 }
 
-
-footer {
+.footer {
     position: absolute;
-    width: 100%;
-    height: 12%;
     right: 0;
     bottom: 0;
     left: 0;
-    color: #000000;
-    background-color: #59b548;
-    clear: both;
-    opacity: 0.8;
+    padding: 1rem;
+    background-color: #238276;
+    text-align: center;
+    border-top-right-radius: 80px;
+    box-shadow: 0px 0px 10px 0px #59b548;
   }
+
+
+  .bordes2{
+
+    position: center;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px 0px 0px 0px #59b548;
+    
+    }
+
+    .footer:hover{
+        background-color: #0fc4e4;
+        color: #05747B ;
+        border: 2px #59b548 solid 
+      }
