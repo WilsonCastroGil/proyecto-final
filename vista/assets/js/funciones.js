@@ -5,12 +5,12 @@ function loginUser(){
 	// adicionamos el boton concatenando el resultado de serialize con el botón, "&btnlogin=true"
 	var datalogin = dataForm+'&btnlogin=true';
 	 // Comprobar: 	
-	 // alert (datalogin);
+	 alert (datalogin);
 	//Con ajax controlamos el paso de datos al servicio desde el controlador:
 	$.ajax({
 		type: "POST",
-		url: "../controller/login.php",
-		data: datalogin,
+		url: "controller/login.php",
+		// data: datalogin,
 	}).done(function(res){
 		// Parseo el resultado para volverlo entero:
 		this.res = parseInt(res);
@@ -18,19 +18,19 @@ function loginUser(){
 		console.log(res);
 		if (this.res === 1 ) {
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			alert("hasta aca vamos ok");
+			// alert("hasta aca vamos ok");
 			// console.log();
 			// Método para cambiar de vista en la url:
-			window.location = "../vista/configuracion.php";
+			window.location = "vista/configuracion.php";
 		}else {
 
 			if (this.res === 2) {
 				
-				window.location = "../vista/vinstructor.php";
+				window.location = "vista/vinstructor.php";
 			} else {
 
 				if (this.res === 3) {
-					window.location = "../vista/vaprendiz.php";
+					window.location = "vista/vaprendiz.php";
 				} else {
 					if (this.res==12) {
 

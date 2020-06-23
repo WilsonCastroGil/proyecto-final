@@ -1,7 +1,7 @@
 <title>Ingreso</title>
 <?php
 session_start();
-include('cabezalogin.inc');
+include('vista/cabezalogin.inc');
 // print_r($_SESSION);
 
 ?>
@@ -41,7 +41,7 @@ include('cabezalogin.inc');
 
 			<div class="text-center text-dark verde">
 
-					<h5>Bienvenido al sistema de horarios chekinassist , debes iniciar sesion para continuar.</h5>
+					<h5>Bienvenido al Sistema de Horarios Virtual del  Sena(SHVS) , debes iniciar sesion para continuar.</h5>
 			</div>
 
 		</nav>
