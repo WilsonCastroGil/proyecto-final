@@ -99,7 +99,15 @@ error_reporting(0);
                 $cont = 0;
 
                 while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }
@@ -139,8 +147,16 @@ error_reporting(0);
 
                 $cont = 0;
 
-                while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+             while ($res = $exe->fetch_row()) {
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }
@@ -150,7 +166,6 @@ error_reporting(0);
   
                 </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
-
 
               ?>
 
@@ -181,7 +196,15 @@ error_reporting(0);
                 $cont = 0;
 
                 while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }
@@ -221,8 +244,16 @@ error_reporting(0);
 
                 $cont = 0;
 
-                while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+              while ($res = $exe->fetch_row()) {
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }
@@ -263,7 +294,15 @@ error_reporting(0);
                 $cont = 0;
 
                 while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }
@@ -305,8 +344,16 @@ error_reporting(0);
 
                 $cont = 0;
 
-                while ($res = $exe->fetch_row()) {
-                  echo '<tr class="text-center font-weight-bold"><td>' . $res[0] . '</td><td>' . $res[3] . '</td><td>' . $res[4] . '</td><td>' . $res[2] . '</td><td>' . $res[5] . '</td><td>' . $res[6] . '</td><td>' . $res[7] . '</td></tr>';
+               while ($res = $exe->fetch_row()) {
+                  echo '<tr class="text-center font-weight-bold">
+                          <td>' . $res[0] . '</td>
+                          <td>' . $res[3] . '</td>
+                          <td>' . $res[4] . '</td>
+                          <td>' . $res[2] . '</td>
+                          <td>' . $res[5] . '</td>
+                          <td>' . $res[6] . '</td>
+                          <td>' . $res[7] . '</td>
+                        </tr>';
 
                   $count = $cont + 1;
                 }

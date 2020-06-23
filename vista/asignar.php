@@ -24,9 +24,9 @@ $createcon->set_charset("utf8");
 </script>
 
 <section class="container">
-	<div class="row">
+  <div class="row">
 
-		
+    
    <h3 class="text-center  col-md-12 mt-2 naranja">Asignar Horarios:
     <svg class="bi bi-stopwatch" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M8 15A6 6 0 1 0 8 3a6 6 0 0 0 0 12zm0 1A7 7 0 1 0 8 2a7 7 0 0 0 0 14z"/>
@@ -211,7 +211,7 @@ $createcon->set_charset("utf8");
                     <th>Trimestre</th>
                     <th>Hora inicio</th>
                     <th>Hora fin</th>
-                    <th>Eliminar</th>
+                    <th>Opcion</th>
                   </tr>
                 </thead>
 
@@ -270,7 +270,7 @@ $createcon->set_charset("utf8");
             <th>Trimestre</th>
             <th>Hora inicio</th>
             <th>Hora fin</th>
-            <th>Eliminar</th> 
+            <th>Opcion</th> 
           </tr>
         </thead>
 
@@ -329,7 +329,7 @@ $createcon->set_charset("utf8");
             <th>Trimestre</th>
             <th>Hora inicio</th>
             <th>Hora fin</th>
-            <th>Eliminar</th>
+            <th>Opcion</th>
           </tr>
         </thead>
 
@@ -387,7 +387,7 @@ $createcon->set_charset("utf8");
                     <th>Trimestre</th>
                     <th>Hora inicio</th>
                     <th>Hora fin</th>
-                    <th>Eliminar</th>
+                    <th>Opcion</th>
                   </tr>
                 </thead>
 
@@ -445,7 +445,7 @@ $createcon->set_charset("utf8");
             <th>Trimestre</th>
             <th>Hora inicio</th>
             <th>Hora fin</th>
-            <th>Eliminar</th> 
+            <th>Opcion</th> 
           </tr>
         </thead>
 
@@ -523,25 +523,25 @@ $createcon->set_charset("utf8");
             <input type="hidden" class="form-control dia" name="idDia" id="recipient-name">
           </div>
           <div class="form-group col-sm-3">
-          	<label for="message-text" class="col-form-label">Periodo:</label>
+            <label for="message-text" class="col-form-label">Periodo:</label>
             <?php echo'<input type="text" name="periodo" class="form-control" readonly value="'.date("Y").'">' ?>
           </div>
           <div class="form-group col-sm-3">
-          	<label for="message-text" class="col-form-label">Trimestre:</label>
+            <label for="message-text" class="col-form-label">Trimestre:</label>
             <select name="trimperiodo" class="form-control">
-            	<option value="" disabled="">Seleccione un Trimestre:</option>
-            	<option value="1">1</option>
-            	<option value="2">2</option>
-            	<option value="3">3</option>
-            	<option value="4">4</option>
+              <option value="" disabled="">Seleccione un Trimestre:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
             </select>
           </div>
           <div class="form-group col-md-6">
             <label for="message-text" class="col-form-label">Instructor:</label>
             <select name="idUsuario" class="form-control">
-            	<option value="">Seleccione un Instructor:</option>
-            	<?php  
-            	
+              <option value="">Seleccione un Instructor:</option>
+              <?php  
+              
               $sql = "SELECT * from instructores";
               $exe = $createcon->query($sql);
               if ($exe->num_rows>0) {
@@ -554,7 +554,7 @@ $createcon->set_charset("utf8");
              }
 
 
-            		// $con->error;
+                // $con->error;
 
              ?>
            </select>
@@ -628,13 +628,13 @@ $createcon->set_charset("utf8");
 </div>
 
 <script>
-	$('#exampleModal').on('show.bs.modal', function (event) {
-	  var button = $(event.relatedTarget) // Button that triggered the modal
-	  var recipient = button.data('whatever') // Extract info from data-* attributes
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
 
-	  recipiente = parseInt(recipient);
-	  console.log(recipiente);
-	  switch (recipiente) {
+    recipiente = parseInt(recipient);
+    console.log(recipiente);
+    switch (recipiente) {
      case 1:
      var titulo = "Lunes";
      break;
