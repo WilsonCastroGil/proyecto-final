@@ -32,10 +32,7 @@ function guardarCentro(){
 	}
 }
 function actualizarCentro(){
-
-
-
-if (isset($_POST['actualizar'])) {
+	if (isset($_POST['actualizar'])) {
 
 		$idCentro = $_POST['idCentro'];
 		$idSede = $_POST['idSede'];
