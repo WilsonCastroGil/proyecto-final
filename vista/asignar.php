@@ -23,6 +23,22 @@ $createcon->set_charset("utf8");
   }
 </script>
 
+<script>
+  window.onload=function(){
+    var contenedor=document.getElementById('contenedor_carga');
+    contenedor.style.visibility='hidden';
+    contenedor.style.opacity='0';
+  }
+
+</script>
+
+<div id="contenedor_carga">
+<div id="carga">
+
+</div>
+
+</div>
+
 <section class="container">
   <div class="row">
 
@@ -117,22 +133,22 @@ $createcon->set_charset("utf8");
 
     <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
       <li class="nav-item col-md-2">
-        <a class="nav-link active " id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
+        <a class="nav-link btn-verde bordes2 " id="home-tab" data-toggle="tab" href="#Lunes" role="tab" aria-controls="home" aria-selected="true">LUNES</a>
       </li>
       <li class="nav-item  col-md-2">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
+        <a class="nav-link btn-verde bordes2" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
       </li>
       <li class="nav-item col-md-2">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Miercoles" role="tab" aria-controls="contact" aria-selected="false">MIERCOLES</a>
+        <a class="nav-link btn-verde bordes2" id="contact-tab" data-toggle="tab" href="#Miercoles" role="tab" aria-controls="contact" aria-selected="false">MIERCOLES</a>
       </li>
       <li class="nav-item col-md-2">
-        <a class="nav-link" id="home-tab" data-toggle="tab" href="#Jueves" role="tab" aria-controls="home" aria-selected="true">JUEVES</a>
+        <a class="nav-link btn-verde bordes2" id="home-tab" data-toggle="tab" href="#Jueves" role="tab" aria-controls="home" aria-selected="true">JUEVES</a>
       </li> 
       <li class="nav-item col-md-2">
-        <a class="nav-link " id="home-tab" data-toggle="tab" href="#Viernes" role="tab" aria-controls="home" aria-selected="true">VIERNES</a>
+        <a class="nav-link btn-verde bordes2 " id="home-tab" data-toggle="tab" href="#Viernes" role="tab" aria-controls="home" aria-selected="true">VIERNES</a>
       </li>
       <li class="nav-item col-md-2">
-        <a class="nav-link " id="home-tab" data-toggle="tab" href="#Sabado" role="tab" aria-controls="home" aria-selected="true">SABADO</a>
+        <a class="nav-link btn-verde bordes2 " id="home-tab" data-toggle="tab" href="#Sabado" role="tab" aria-controls="home" aria-selected="true">SABADO</a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">

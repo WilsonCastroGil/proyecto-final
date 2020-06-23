@@ -89,6 +89,18 @@ switch ($prof) {
         <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
       </svg>Perfil</a>
        
+
+      <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div>
+       
         <div class="dropdown-divider"></div>
        
      
@@ -130,6 +142,7 @@ switch ($prof) {
         <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
         <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
       </svg>Perfil</a>
+      
        
         <div class="dropdown-divider"></div>
        
@@ -149,6 +162,13 @@ switch ($prof) {
   ';
 
     break;
+
+
+    case '1;1;0':
+
+
+
+
 }
 
 

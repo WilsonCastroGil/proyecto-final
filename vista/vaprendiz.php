@@ -8,7 +8,7 @@ include('../controller/Conexion.php');
 $con = new Conexion();
 $createcon = $con->conectar();
 $createcon->set_charset("utf8");
-// print_r($_SESSION);
+print_r($_SESSION);
 error_reporting(0);
 ?>
 <!-- 
@@ -56,7 +56,7 @@ error_reporting(0);
             <a class="nav-link btn-verde bordes2 " id="home-tab" data-toggle="tab" href="#lunes" role="tab" aria-controls="home" aria-selected="false">LUNES</a>
           </li>
           <li class="nav-item col-md-2">
-            <a class="nav-link btn-verde btn-verde bordes2" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
+            <a class="nav-link btn-verde bordes2" id="profile-tab" data-toggle="tab" href="#Martes" role="tab" aria-controls="profile" aria-selected="false">MARTES</a>
           </li>
           <li class="nav-ite col-md-2">
             <a class="nav-link btn-verde bordes2" id="contact-tab" data-toggle="tab" href="#Miercoles" role="tab" aria-controls="contact" aria-selected="false">MIERCOLES</a>
