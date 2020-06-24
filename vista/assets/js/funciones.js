@@ -5,12 +5,12 @@ function loginUser(){
 	// adicionamos el boton concatenando el resultado de serialize con el botón, "&btnlogin=true"
 	var datalogin = dataForm+'&btnlogin=true';
 	 // Comprobar: 	
-	 alert (datalogin);
+	//  alert (datalogin);
 	//Con ajax controlamos el paso de datos al servicio desde el controlador:
 	$.ajax({
 		type: "POST",
 		url: "controller/login.php",
-		// data: datalogin,
+		data: datalogin,
 	}).done(function(res){
 		// Parseo el resultado para volverlo entero:
 		this.res = parseInt(res);

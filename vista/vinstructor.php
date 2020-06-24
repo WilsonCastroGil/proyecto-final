@@ -15,7 +15,7 @@ if ($_SESSION["perfil"] != '0;1;0') {
     setcookie(session_name(), 0, 1, $parametros_cookies["path"]);
     # Actualizamos la pagina donde nos escontrabamos y redirigimos a la pagina princial
     echo "<meta http-equiv='refresh' content='0;'/>";
-    header('location:login.php');
+    header('location:cerrarsesion.php');
     exit;
 }
 ?>

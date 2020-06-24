@@ -45,10 +45,10 @@
 
 
 .bg{
-    background: url('../images/loginback.jpg');
+    background: url('../images/loginback.jpg')no-repeat;
     width: 100%;   
-
-    background-size:auto;
+    height: 100%;
+    background-size: 100% 100%;
    
     
 }
@@ -140,11 +140,11 @@ background: url('../images/fondillo.jpg');
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: #238276;
     text-align: center;
-    border-top-right-radius: 80px;
-    box-shadow: 0px 0px 10px 0px #59b548;
+    border-top-right-radius: 100px;
+    
   }
 
 
@@ -161,3 +161,11 @@ background: url('../images/fondillo.jpg');
         color: #05747B ;
         border: 2px #59b548 solid 
       }
+
+      .bordes3{
+
+        position: center;
+        border-bottom-left-radius: 90px;
+        box-shadow: 0px 10px 0px 0px #59b548;
+        border-bottom-right-radius: 90px;
+        }
