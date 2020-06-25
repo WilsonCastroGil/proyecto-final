@@ -168,6 +168,8 @@ background: url('../images/fondillo.jpg');
           line-height: 100px;
           margin: 0;
           text-align: center;
+          border-top-right-radius:100px ;
+          border-top-left-radius:100px ;
         }
         .fondo:hover {
             /*color:#000;*/
@@ -176,10 +178,10 @@ background: url('../images/fondillo.jpg');
         .fondo:hover > footer {
           display: block;
           font-size: 15px;
-          animation: fadein 2s;
-          -moz-animation: fadein 2s; /* Firefox */
-          -webkit-animation: fadein 2s; /* Safari and Chrome */
-          -o-animation: fadein 2s; /* Opera */
+          animation: fadein 1s;
+          -moz-animation: fadein 1s; /* Firefox */
+          -webkit-animation: fadein 1s; /* Safari and Chrome */
+          -o-animation: fadein 1s; /* Opera */
         }
         @keyframes fadein {
             from {

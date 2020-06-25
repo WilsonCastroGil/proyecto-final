@@ -69,6 +69,7 @@ function listaruser(req){
 
 
 		$('#resultados').html(tabla);
+		
 
 		console.log(tabla);
 	})
@@ -101,6 +102,7 @@ function asignarHorario(){
 	})
 	.done(function(resultado){
 		$('#ejecucion').html(resultado);
+		setTimeout(regarcar,3000);
 	})
 }
 
@@ -126,13 +128,14 @@ function cruduser(btnSaveUser){
 		console.log(res);
 		
 		$("#alerta").html(res);
+		setTimeout(regarcar,3000);
 	})
 }
 
 function crudficha(btn){
 	var datoForm = $("#formficha").serialize();
 	var datoReg = datoForm+'&btnopcion='+btn;
-	alert (datoReg);
+	// alert (datoReg);
 	console.log();
 	// Control asicronico:
 	$.ajax({
@@ -143,13 +146,14 @@ function crudficha(btn){
 	.done(function(res){
 		console.log(res);
 		$("#alertaficha").html(res);
+		setTimeout(regarcar,3000);
 	})
 }
 
 function crudcompetencia(btn){
 	var datoForm = $("#formcompetencia").serialize();
 	var datoReg = datoForm+'&btnopcion='+btn;
-	alert (datoReg);
+	// alert (datoReg);
 	console.log();
 	// Control asicronico:
 	$.ajax({
@@ -160,6 +164,7 @@ function crudcompetencia(btn){
 	.done(function(res){
 		console.log(res);
 		$("#alertacomp").html(res);
+		setTimeout(regarcar,3000);
 	})
 }
 
@@ -168,7 +173,7 @@ function savemateria(){
 	var datos = $('#guardarmateria').serialize();
 	var dato = datos+'&asignar=true';
 	// console.log(data);
-	alert(dato);
+	// alert(dato);
 	$.ajax({
 		url: '../controller/guardarActiproy.php',
 		type: 'post',
@@ -176,6 +181,17 @@ function savemateria(){
 	})
 	.done(function(resultado){
 		$('#alertamat').html(resultado);
-		window.location='../vista/configuracion.php';
+		setTimeout(regarcar,3000);
+		
+
+
 	})
+}
+
+
+function regarcar(){
+
+	location.reload();
+
+
 }
