@@ -8,7 +8,7 @@ $parametros_cookies = session_get_cookie_params();
 setcookie(session_name(),0,1,$parametros_cookies["path"]);
 # Actualizamos la pagina donde nos escontrabamos y redirigimos a la pagina princial
 echo "<meta http-equiv='refresh' content='0;'/>";
-header('location:login.php');
+header('location:../index.php');
 exit;
 ?>
 

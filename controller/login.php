@@ -28,7 +28,6 @@ if (isset($_POST['btnlogin'])){
 	
 			# Si el resultado me trae mas de una fila y no me devuelve el mesaje 'error' entonces:
 
-
 	
 			#ponemos explode para separar los elementos traidos en el array por el simbolo ';'
 	

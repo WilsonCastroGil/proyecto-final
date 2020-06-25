@@ -3,6 +3,8 @@
 	$con = New Conexion();
  $createcon=$con->conectar();
 
+
+
 function guardarCentro(){
  	if (isset($_POST['centro'])) {
 
@@ -29,7 +31,6 @@ function guardarCentro(){
 
 	}
 }
-
 function actualizarCentro(){
 	if (isset($_POST['actualizar'])) {
 
@@ -43,8 +44,14 @@ function actualizarCentro(){
 		$estado = 1;
 
 
-	   $sql = "update centro set `idSede` = '$idSede',`nombre` = '$nombre',`direccion` = '$direccion',
-	   										`telefono` = '$telefono',`correo` = '$correo',`director` = '$director' where `idCentro` = '$idCentro'";
+	   $sql = "update centro set
+	    `idSede` = '$idSede',
+	    `nombre` = '$nombre',
+	    `direccion` = '$direccion',
+		`telefono` = '$telefono',
+		`correo` = '$correo',
+		`director` = '$director' 
+		where `idCentro` = '$idCentro'";
 
 
 	   $exe = $createcon->query($sql);
@@ -57,8 +64,8 @@ function actualizarCentro(){
 	   }
 
    }
-
 }
+
 
 ?>
 

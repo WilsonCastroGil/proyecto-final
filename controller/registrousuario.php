@@ -52,10 +52,8 @@ function guardarUsuario(){
 			echo "error, no hay datos";
 
 		}
-	
-	}	
-
-}
+	}
+}	
 
 function actualizarUsuario(){
 

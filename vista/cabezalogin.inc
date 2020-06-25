@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="vista/assets\css\bootstrap.min.css">
 
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="vista/assets/css/style.css">
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
 font-awesome/4.7.0/css/font-awesome.min.css">
 		
-<link rel="stylesheet" type="text/css" href="assets/DataTables/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="vista/assets/DataTables/datatables.min.css"/>
 
 </head>
 
@@ -17,17 +17,44 @@ font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body class="bg">
 
+<div class="fondo ">
+
+  <footer>
+
+    <div id="footer" class="container-fluid text-center ">
 
 
-<script src="assets/js/jquery.js"></script>
+      <div class="row p-2 ">
+
+        <div class="col-sm-8">
+
+        <p class="text-left font-weight-bold text light ">
+ 
+        ¡RECUERDA! tu usuario es tu correo @misena y tu contraseña es tu numero de documento con el cual estas inscrito              
+
+        </p>
+        </div>
+        <div class="col-sm-4 text-right">
+        copyright sena 2020@ 
+        </div>
+
+      </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </footer>
 
-<script type="text/javascript" src="assets/DataTables/datatables.min.js"></script>
+</div>
+
+<script src="vista/assets/js/jquery.js"></script>
+<script src="vista/assets/js/funciones.js"></script>
+
+<script src="vista\assets\js\popper.js"></script>
+<script src="vista\assets\js\bootstrap.min.js">"></script>
+
+<script type="text/javascript" src="vista/assets/DataTables/datatables.min.js"></script>
 
 
-<script src="assets/js/funciones.js"></script>
+
 </body>
 </html>
