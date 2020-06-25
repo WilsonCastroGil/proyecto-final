@@ -19,7 +19,7 @@ function loginUser(){
 		if (this.res === 1 ) {
 			
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			alert("hasta aca vamos ok");
+			// alert("hasta aca vamos ok");
 			// console.log();
 			// Método para cambiar de vista en la url:
 			window.location = "vista/configuracion.php";
@@ -116,7 +116,7 @@ function asignarHorario(){
 function cruduser(btnSaveUser){
 	var datoForm = $("#formRegistroUser").serialize();
 	var datoReg = datoForm+'&btnopcion='+btnSaveUser;
-	alert (datoReg);
+	// alert (datoReg);
 	console.log();
 	// Control asicronico:
 	$.ajax({
