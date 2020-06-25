@@ -17,8 +17,9 @@ function loginUser(){
 
 		console.log(res);
 		if (this.res === 1 ) {
+			
 			// Si al volver entero el resultado es 1, entonces se va a mi página de main:
-			// alert("hasta aca vamos ok");
+			alert("hasta aca vamos ok");
 			// console.log();
 			// Método para cambiar de vista en la url:
 			window.location = "vista/configuracion.php";
@@ -32,18 +33,8 @@ function loginUser(){
 				if (this.res === 3) {
 					window.location = "vista/vaprendiz.php";
 				} else {
-					if (this.res==12) {
-
-							
-
-
-
-
-
-						
-					}
-
-				
+					
+					$("#resultado").html(res);
 				}
 				
 			}
@@ -169,5 +160,22 @@ function crudcompetencia(btn){
 	.done(function(res){
 		console.log(res);
 		$("#alertacomp").html(res);
+	})
+}
+
+
+function savemateria(){
+	var datos = $('#guardarmateria').serialize();
+	var dato = datos+'&asignar=true';
+	// console.log(data);
+	alert(dato);
+	$.ajax({
+		url: '../controller/guardarActiproy.php',
+		type: 'post',
+		data : dato
+	})
+	.done(function(resultado){
+		$('#alertamat').html(resultado);
+		window.location='../vista/configuracion.php';
 	})
 }

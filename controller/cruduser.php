@@ -70,17 +70,20 @@ if (isset($_POST['btnopcion'])) {
 			$v_documento  =$_POST['documento'];
 			$v_telefono  =$_POST['telefono'];
 			$v_correo =$_POST['correo']; 
-			$idTipoUsuario =$_POST['idTipoUsuario']; 
-			$estado =1;
+			$v_nombre =$_POST['nombre'];
+			$v_apellido  =$_POST['apellido'];
+			$v_idTipoUsuario =$_POST['idTipoUsuario']; 
+			$v_estado =1;
 
 			 $sql="call sp_ActualizarUsuario(
-				 '$v_documento',
-				 '$v_idTipoDoc',
-				 '$v_correo',
-				 '$v_password', 
-				 '$v_telefono', 
-				 '$idTipoUsuario',
-				 '$estado')";
+				'$v_documento',
+ 				'$v_idTipoDoc',  
+				 '$v_nombre',
+				 '$v_apellido',
+				'$v_telefono', 
+				'$v_correo',
+				'$v_idTipoUsuario', 
+ 				'$v_estado' )";
 	
 	
 	

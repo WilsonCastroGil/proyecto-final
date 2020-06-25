@@ -8,7 +8,7 @@ include('../controller/Conexion.php');
 $con = new Conexion();
 $createcon = $con->conectar();
 $createcon->set_charset("utf8");
-print_r($_SESSION);
+// print_r($_SESSION);
 error_reporting(0);
 ?>
 <!-- 
@@ -115,7 +115,7 @@ error_reporting(0);
 
                 echo  '<div class=" spinner-grow text-danger" role="status">
   
-                </div>  <article class="text-danger font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+                </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
 
@@ -212,7 +212,7 @@ error_reporting(0);
 
                 echo  '<div class=" spinner-grow text-danger" role="status">
   
-                </div>  <article class="text-dark"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+                </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
 
@@ -261,7 +261,7 @@ error_reporting(0);
 
                 echo  '<div class=" spinner-grow text-danger" role="status">
   
-                </div>  <article class="text-dark"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+                </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
 
@@ -308,9 +308,9 @@ error_reporting(0);
                 }
               } else {
 
-                echo  '<div class=" spinner-grow text-dark" role="status">
+                echo  '<div class=" spinner-grow text-danger" role="status">
   
-                </div>  <article class="text-danger"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+                </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
 
@@ -359,9 +359,9 @@ error_reporting(0);
                 }
               } else {
 
-                echo  '<div class=" spinner-grow text-dark" role="status">
+                echo  '<div class=" spinner-grow text-danger" role="status">
   
-                </div>  <article class="text-danger"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+                </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
               }
 
 
@@ -401,43 +401,4 @@ error_reporting(0);
 
 </div>
 
-<footer class="page-footer font-small  p-1 footer  ">
 
-
-		<div class="container-fluid text-center text-md-left">
-		
-		
-			<div class="row ">
-
-
-				<div class="col-md-6 mt-md-0 ">
-
-				
-					<h6 class="text-uppercase font-weight-bold ">Aviso</h6>
-					<p>
-						recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
-					</p>
-
-				</div>
-			
-
-				<hr class="clearfix w-100 d-md-none pb-3">
-
-			
-				<div class="col-md-6 mb-md-0 mb-3">
-
-					
-					<h6 class="text-uppercase font-weight-bold text-light">¡Recuerda!</h6>
-					<p>Solo puedes tener un perfil activo en caso de tener mas de 1,
-						si tienes problemas para visualiar tu horario debes filtrar los resultados ,
-						así la visualizacion es mas fácil.</p>
-
-				</div>
-		
-
-			</div>
-
-
-		</div>
-
-	</footer>

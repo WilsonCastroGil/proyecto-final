@@ -194,3 +194,32 @@ switch ($prof) {
   ?>
 
 </nav>
+
+<div class="fondo ">
+
+  <footer>
+
+    <div id="footer" class="container-fluid text-center ">
+
+
+      <div class="row p-2 ">
+
+        <div class="col-sm-8">
+
+        <p class="text-left font-weight-bold text light ">
+ 
+        ¡RECUERDA! tu usuario es tu correo @misena y tu contraseña es tu numero de documento con el cual estas inscrito              
+
+        </p>
+        </div>
+        <div class="col-sm-4 text-right">
+        copyright sena 2020@ 
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+
+</div>

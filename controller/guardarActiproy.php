@@ -3,11 +3,11 @@
 	$con = New Conexion();
  $createcon=$con->conectar();
 
- 	if (isset($_POST['actiProy'])) {
+ 	if (isset($_POST['asignar'])) {
 
  		$opcion = 'guardar';
 
- 		$nombre = $_POST['nombre'];
+ 		$nombre = $_POST['nombremat'];
 
  		$sql = "CALL sp_actiproy('$nombre','$opcion')";
 
@@ -21,7 +21,7 @@
 			}
 			
 		}else{
-			echo "No es posible guardar la actividad de proyecto";
+			echo "No es posible guardar la materia (actividad de proyecto)";
 		}
 	}
 

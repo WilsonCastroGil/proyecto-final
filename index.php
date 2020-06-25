@@ -96,52 +96,5 @@ include('vista/cabezalogin.inc');
 
 
 
-	<!-- Footer -->
-	<footer class="page-footer font-small teal  footer ">
 
-		<!-- Footer Text -->
-		<div class="container-fluid text-center text-md-left">
-
-			<!-- Grid row -->
-			<div class="row">
-
-				<!-- Grid column -->
-				<div class="col-md-6 mt-md-0 mt-3">
-
-					<!-- Content -->
-					<h6 class="text-uppercase font-weight-bold text-light">Aviso</h6>
-					<p>
-						recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
-					</p>
-
-				</div>
-				<!-- Grid column -->
-
-				<hr class="clearfix w-100 d-md-none pb-3">
-
-				<!-- Grid column -->
-				<div class="col-md-6 mb-md-0 mb-3">
-
-					<!-- Content -->
-					<h6 class="text-uppercase font-weight-bold text-light">¡Recuerda!</h6>
-					<p class="font-weight-bold">Solo puedes tener un perfil activo en caso de tener mas de 1,
-						si tienes problemas para visualiar tu horario debes filtrar los resultados ,
-						así la visualizacion es mas fácil.</p>
-
-				</div>
-				<!-- Grid column -->
-
-			</div>
-
-			
-			<!-- Grid row -->
-
-		</div>
-		<!-- Footer Text -->
-
-		<!-- Copyright -->
-
-		<!-- Copyright -->
-
-	</footer>
 

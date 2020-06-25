@@ -55,7 +55,7 @@ if ($_SESSION["perfil"] != '1;0;0') {
 </div>
 
 <section class="container">
-  <div class="row">
+  <div class="row mt-3">
 
     
    <!-- <h3 class="text-center  col-md-12 mt-2 text-light  badge-pill badge-primary">Asignar Horarios:
@@ -713,3 +713,4 @@ if ($_SESSION["perfil"] != '1;0;0') {
    modal.find('.dia').val(recipient)
  })
 </script>
+
