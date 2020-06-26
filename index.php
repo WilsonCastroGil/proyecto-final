@@ -1,11 +1,9 @@
-<title>Ingreso</title>
 <?php
 session_start();
 include('vista/cabezalogin.inc');
 // print_r($_SESSION);
-
 ?>
-
+<title>Ingreso</title>
 <script>
   window.onload=function(){
     var contenedor=document.getElementById('contenedor_carga');

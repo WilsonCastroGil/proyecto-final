@@ -1,12 +1,9 @@
-
-
 <?php  
 	include('menu.inc');
 		include('../controller/Conexion.php');
             		$con = New Conexion();
 	                $createcon=$con->conectar();
-					$createcon->set_charset("utf8");
-				
+					$createcon->set_charset("utf8");				
 ?>
 <section class="container-fluid">
 	<div class="row text-center mt-5 ">

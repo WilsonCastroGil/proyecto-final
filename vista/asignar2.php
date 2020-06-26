@@ -4,8 +4,7 @@
 		include('../controller/Conexion.php');
             		$con = New Conexion();
 	                $createcon=$con->conectar();
-	                 $createcon->set_charset("utf8");
-	               
+	                 $createcon->set_charset("utf8");               
 ?>
 <section class="container">
 	<div class="row">
