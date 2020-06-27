@@ -1,4 +1,9 @@
 <?php
+
+    include('../vista/menu.inc');
+    include('../controller/Conexion.php');
+                                
+
 if (isset($_POST["enviar"])) {//nos permite recepcionar una variable que si exista y que no sea null
     //include('Conexion.php');
      //$con = New Conexion();

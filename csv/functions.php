@@ -1,5 +1,6 @@
 <?php
 
+// funcion para ingresar datos a gran escala de los aprendices
 function insertar_datos($v_idTipoDoc,$v_documento,$v_nombre,$v_apellido,$v_telefono,$v_genero,$v_correo,$v_idFicha,$v_jornada){
 
 
@@ -40,7 +41,7 @@ $con = new Conexion();
 	}
   }	
 
-
+// funcion para ingresar datos a gran escala de los docenntes
   function insertarDocentes($v_idTipoDoc,$v_documento,$v_nombre,$v_apellido,$v_telefono,$v_genero,$v_correo){
 
 
@@ -51,18 +52,6 @@ $con = new Conexion();
 			# code...
 			$v_idTipoDoc=2;
 		}	
-
-	// print_r("<pre> ");
-	// print_r($v_idTipoDoc);
-	// print_r($v_documento);
-	// print_r($v_nombre);
-	// print_r($v_apellido);
-	// print_r($v_telefono);
-	// print_r($v_genero);
-	// print_r($v_correo);
-	// print_r($v_idFicha);
-	// print_r($v_jornada);
-	// print_r("</pre>");
 
 	require_once("conexion.php");
 
