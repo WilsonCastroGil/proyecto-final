@@ -1,7 +1,5 @@
 <?php  
 include('cabeza.inc');
-
-
 ?>
 
 <div class="pos-f-t">
