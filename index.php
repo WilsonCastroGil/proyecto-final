@@ -49,19 +49,8 @@ include('vista/cabezalogin.inc');
 </div>
 
 <section class="container-fluid">
-
-
-
 	<div class="row-12">
-
-
-
-
 		<div class="row">
-
-
-
-
 			<div class="col-sm-4"></div>
 			<div class="col mt-5">
 				<form class="mt-5 form-container" method="POST" id="formLogin">
@@ -71,10 +60,8 @@ include('vista/cabezalogin.inc');
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Correo @misena</label>
-						<input type="txt" class="form-control" name="usuario" aria-describedby="emailHelp">
+						<input type="email" class="form-control" name="usuario" aria-describedby="emailHelp">
 						<small id="emailHelp" class="form-text text-muted">
-
-
 						</small>
 					</div>
 					<div class="form-group">
