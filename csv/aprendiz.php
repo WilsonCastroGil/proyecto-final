@@ -1,6 +1,8 @@
-
 <?php
 
+    include('../vista/menu.inc');
+    include('../controller/Conexion.php');
+                                
 
 if (isset($_POST["enviar"])) {//nos permite recepcionar una variable que si exista y que no sea null
     //include('Conexion.php');
@@ -37,7 +39,16 @@ if (isset($_POST["enviar"])) {//nos permite recepcionar una variable que si exis
                 # echo $datos[0] ." ".$datos[1] ." ".$datos[2]." ".$datos[3] ." ".$datos[4] ." ".$datos[5] ." ".$datos[6] ." ".$datos[7] ."<br/>";
 
             if ($rows > 1) {
-                $resultado = insertar_datos($datos[0],$datos[1],$datos[2],$datos[3],$datos[4],$datos[5],$datos[6],$_POST["ficha"],$_POST["jornada"]);
+                $resultado = insertar_datos(
+                    utf8_decode($datos[0]),
+                    utf8_decode($datos[1]),
+                    utf8_decode($datos[2]),
+                    utf8_decode($datos[3]),
+                    utf8_decode($datos[4]),
+                    utf8_decode($datos[5]),
+                    utf8_decode($datos[6]),
+                    $_POST["ficha"],
+                    $_POST["jornada"]);
                 #print_r($_POST);
                 if($resultado){
                     echo "se inserto los datos correctamnete<br/>";

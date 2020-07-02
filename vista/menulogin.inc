@@ -1,7 +1,5 @@
 <?php  
 include('cabeza.inc');
-
-
 ?>
 
 <div class="pos-f-t">
@@ -20,45 +18,21 @@ include('cabeza.inc');
 </div>
 </div>
 
-
-
 <footer class="page-footer font-small   footer  ">
-
-
 	<div id="footer" class="container-fluid text-center text-md-left">
-
-
 		<div class="row ">
-
-
 			<div class="col-md-6 mt-md-0 ">
-
-
 				<h6 class="text-uppercase text-center font-weight-bold text-light ">Aviso</h6>
 				<p class="font-weight-bold">
 					recuerde que su usuario es el correo @misena y su contraseña es el documento con el cual está registrado en la institucion
 				</p>
-
 			</div>
-
-
-
-
-
 			<div class="col-md-6 mb-md-0 mb-3">
-
-
 				<h6 class="text-uppercase font-weight-bold text-light text-center">¡Recuerda!</h6>
 				<p class="font-weight-bold">Solo puedes tener un perfil activo en caso de tener mas de 1,
 					si tienes problemas para visualiar tu horario debes filtrar los resultados ,
 					así la visualizacion es mas fácil.</p>
-
 			</div>
-
-
 		</div>
-
-
 	</div>
-
 </footer>
