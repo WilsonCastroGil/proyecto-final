@@ -5,7 +5,7 @@ include('menu.inc');
 include('../controller/Conexion.php');
 
 
-print_r($_SESSION);
+// print_r($_SESSION);
 // error_reporting(0);
 
 if ($_SESSION["perfil"] != '0;0;1') {
@@ -23,11 +23,11 @@ if ($_SESSION["perfil"] != '0;0;1') {
 }
 ?>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function() {
     $('#tsemana.display').DataTable();
   });
-</script>
+</script> -->
 
 <script>
   window.onload = function() {
