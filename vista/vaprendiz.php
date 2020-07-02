@@ -6,8 +6,8 @@ include('../controller/Conexion.php');
 $con = new Conexion();
 $createcon = $con->conectar();
 $createcon->set_charset("utf8");
-// print_r($_SESSION);
-error_reporting(0);
+print_r($_SESSION);
+// error_reporting(0);
 
 if ($_SESSION["perfil"] != '0;0;1') {
     # Aseguramos desactivar todas las sesiones:
@@ -23,8 +23,8 @@ if ($_SESSION["perfil"] != '0;0;1') {
   exit;
 }
 ?>
-<!-- 
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
   $(document).ready(function() {
     $('#tsemana.display').DataTable();
   });
@@ -113,7 +113,7 @@ if ($_SESSION["perfil"] != '0;0;1') {
 
               $cont = 0;
 
-              while ($res = $exe->fetch_row()) {
+              while ($res = $exe->fetch_array()) {
                 echo '<tr class="text-center font-weight-bold">
                 <td>' . $res[0] . '</td>
                 <td>' . $res[3] . '</td>
@@ -202,7 +202,7 @@ if ($_SESSION["perfil"] != '0;0;1') {
 
             <?php
 
-            $sql = "call aprendiz ('" . $_SESSION["user"] . "','miercoles')";
+            $sql = "call aprendiz ('" . $_SESSION["user"]. "','miercoles')";
 
             $exe = $createcon->query($sql);
 
@@ -251,33 +251,39 @@ if ($_SESSION["perfil"] != '0;0;1') {
 
             <?php
 
-            $sql = "call aprendiz ('" . $_SESSION["user"] . "','jueves')";
+            $sql = "call aprendiz ('".$_SESSION["user"]."','jueves')";
+
+     
 
             $exe = $createcon->query($sql);
 
-            if ($exe->num_rows > 0) {
+            print_r($res = $exe->row[0]);
 
-              $cont = 0;
+            // if ($exe->num_rows > 0) {
 
-              while ($res = $exe->fetch_row()) {
-                echo '<tr class="text-center font-weight-bold">
-                <td>' . $res[0] . '</td>
-                <td>' . $res[3] . '</td>
-                <td>' . $res[4] . '</td>
-                <td>' . $res[2] . '</td>
-                <td>' . $res[5] . '</td>
-                <td>' . $res[6] . '</td>
-                <td>' . $res[7] . '</td>
-                </tr>';
+             
 
-                $count = $cont + 1;
-              }
-            } else {
+            //   $cont = 0;
 
-              echo  '<div class=" spinner-grow text-danger" role="status">
+            //   while ($res = $exe->fetch_row()) {
+            //     echo '<tr class="text-center font-weight-bold">
+            //     <td>' . $res[0] . '</td>
+            //     <td>' . $res[3] . '</td>
+            //     <td>' . $res[4] . '</td>
+            //     <td>' . $res[2] . '</td>
+            //     <td>' . $res[5] . '</td>
+            //     <td>' . $res[6] . '</td>
+            //     <td>' . $res[7] . '</td>
+            //     </tr>';
 
-              </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
-            }
+            //     $count = $cont + 1;
+            //   }
+            // } else {
+
+            //   echo  '<div class=" spinner-grow text-danger" role="status">
+
+            //   </div>  <article class="text-dark font-weight-bold"> ¡ERROR! no se encontraron datos, puede deberse a que no tiene aun asignado un horario en este dia</article>';
+            // }
 
 
             ?>
