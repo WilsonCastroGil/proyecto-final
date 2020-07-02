@@ -10,5 +10,5 @@ setcookie(session_name(),0,1,$parametros_cookies["path"]);
 echo "<meta http-equiv='refresh' content='0;'/>";
 header('location:../index.php');
 exit;
-?>
+?> 
 

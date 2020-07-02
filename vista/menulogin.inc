@@ -18,7 +18,7 @@ include('cabeza.inc');
 </div>
 </div>
 
-<footer class="page-footer font-small   footer  ">
+<footer class="page-footer font-small   footer  ">	
 	<div id="footer" class="container-fluid text-center text-md-left">
 		<div class="row ">
 			<div class="col-md-6 mt-md-0 ">
