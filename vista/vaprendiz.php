@@ -150,9 +150,9 @@ $createcon->set_charset("utf8");
 
             <?php
 
-$con = new Conexion();
-$createcon = $con->conectar();
-$createcon->set_charset("utf8");
+          $con = new Conexion();
+          $createcon = $con->conectar();
+          $createcon->set_charset("utf8");
 
             $sql = "call aprendiz ('" . $_SESSION["user"] . "','martes')";
 
